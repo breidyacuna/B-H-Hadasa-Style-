@@ -1295,7 +1295,7 @@
     </div>
   </section>
 
- <footer class="footer">
+<footer class="footer">
   <div class="container">
     <p id="brandSecretTrigger" ondblclick="openAdminModal()" style="font-weight:800;color:var(--text-main);cursor:pointer;">B&amp;H • Hadasa Style</p>
     <p id="footerDetailsText"></p>
@@ -2952,6 +2952,41 @@
       renderClientVipCard();
       await loadPublicCatalogFromGithub();
     });
+
+    (function () {
+      function mostrarPanelPrivado(evento) {
+        if (evento && typeof evento.preventDefault === 'function') {
+          evento.preventDefault();
+        }
+        const modal = document.getElementById('adminModalBackdrop');
+        if (!modal) return;
+        modal.classList.remove('hidden');
+        modal.style.display = 'flex';
+        const campoClave = document.getElementById('adminPassInput');
+        if (campoClave) {
+          campoClave.value = '';
+          setTimeout(() => campoClave.focus(), 50);
+        }
+      }
+
+      window.openAdminModal = mostrarPanelPrivado;
+
+      function activarDisparadores() {
+        const ids = ['storeBrandTitle', 'brandSecretTrigger'];
+        ids.forEach((id) => {
+          const elemento = document.getElementById(id);
+          if (!elemento) return;
+          elemento.style.cursor = 'pointer';
+          elemento.ondblclick = mostrarPanelPrivado;
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', activarDisparadores);
+      } else {
+        activarDisparadores();
+      }
+    })();
   </script>
 </body>
 </html>
