@@ -1296,12 +1296,12 @@
 
   <footer class="footer">
     <div class="container">
-      <p style="font-weight:800;color:var(--text-main);">B&amp;H • Hadasa Style</p>
+      <p id="brandSecretTrigger" ondblclick="openAdminModal()" style="font-weight:800;color:var(--text-main);cursor:pointer;">B&amp;H • Hadasa Style</p>
       <p id="footerDetailsText"></p>
     </div>
   </footer>
 
-  <button type="button" class="floating-admin-btn" onclick="openAdminModal()">
+  <button type="button" class="floating-admin-btn" onclick="openAdminModal()" style="display:none;">
     ⚙ Panel Privado
   </button>
 
