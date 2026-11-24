@@ -1,0 +1,108 @@
+{
+  "logoUrl": "",
+  "storeConfig": {
+    "brandSub": "Tenemos lo mejor para tu estilo",
+    "whatsappNumber": "584167172744",
+    "defaultPoints": 50,
+    "bankName": "Banco Provincial",
+    "payPhone": "04167172744",
+    "payId": "27888181",
+    "heroTitle": "Tenemos lo mejor para tu estilo",
+    "heroDesc": "Piezas llenas de color, franelas, camisitas tejidas y moda pensada para destacar cada día.",
+    "customMediaUrl": "",
+    "visibility": {
+      "showFloatingWa": true,
+      "showAccountSection": true,
+      "showLevelsSection": true,
+      "showPaymentsSection": true,
+      "showPriceMenuSection": true
+    }
+  },
+  "cloud": {
+    "cloudinary": {
+      "cloudName": "",
+      "uploadPreset": ""
+    },
+    "github": {
+      "owner": "breidyacuna",
+      "repo": "B-H-Hadasa-Style-",
+      "branch": "main",
+      "path": "data/store-data.json",
+      "token": ""
+    }
+  },
+  "folders": [
+    {
+      "id": "f-franelas",
+      "name": "Franelas",
+      "parentId": "root"
+    },
+    {
+      "id": "f-tejidas",
+      "name": "Camisitas Tejidas",
+      "parentId": "root"
+    },
+    {
+      "id": "f-conjuntos",
+      "name": "Conjuntos y Novedades",
+      "parentId": "root"
+    },
+    {
+      "id": "f-sub-franelas-basicas",
+      "name": "Franelas Estampadas y Lisas",
+      "parentId": "f-franelas"
+    },
+    {
+      "id": "f-sub-tejidos-finos",
+      "name": "Tejidos con Detalles",
+      "parentId": "f-tejidas"
+    }
+  ],
+  "products": [
+    {
+      "id": "p-1",
+      "name": "Camisita Tejida Brisa",
+      "price": 22,
+      "points": 50,
+      "folderId": "f-sub-tejidos-finos",
+      "desc": "Camisita tejida fresca y ligera, ideal para combinar con jeans o faldas.",
+      "image": "https://placehold.co/500x400/FF80AB/240836?text=Camisita+Tejida+Brisa"
+    },
+    {
+      "id": "p-2",
+      "name": "Franela Casual Color",
+      "price": 16,
+      "points": 50,
+      "folderId": "f-sub-franelas-basicas",
+      "desc": "Franela cómoda de algodón con corte favorecedor y colores vivos.",
+      "image": "https://placehold.co/500x400/CE93D8/240836?text=Franela+Casual+Color"
+    },
+    {
+      "id": "p-3",
+      "name": "Camisita Tejida Lazos & Flores",
+      "price": 24,
+      "points": 50,
+      "folderId": "f-tejidas",
+      "desc": "Tejido suave con detalles delicados y excelente ajuste.",
+      "image": "https://placehold.co/500x400/FFD180/240836?text=Camisita+Tejida+Detalles"
+    },
+    {
+      "id": "p-4",
+      "name": "Franela Boutique Hadasa",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-franelas",
+      "desc": "Franela de uso diario con acabado suave y estilo actual.",
+      "image": "https://placehold.co/500x400/80DEEA/240836?text=Franela+Boutique"
+    }
+  ],
+  "clients": [
+    {
+      "fullName": "María Pérez",
+      "phone": "04121234567",
+      "username": "mariaperez",
+      "points": 150
+    }
+  ],
+  "updatedAt": "2026-11-24T21:31:48.155Z"
+}
