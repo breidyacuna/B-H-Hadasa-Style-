@@ -1,0 +1,2956 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>B&amp;H • Hadasa Style | Tenemos lo mejor para tu estilo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-main: #FFF2F9;
+      --bg-card: #FFFFFF;
+      --bg-soft: #FFE3F2;
+      --bg-plum: #240836;
+      --bg-plum-2: #4A0E6B;
+
+      --text-main: #240836;
+      --text-muted: #6A2C85;
+      --text-light: #FFFFFF;
+
+      --accent-magenta: #E91E63;
+      --accent-pink: #FF3B9A;
+      --accent-violet: #7B1FA2;
+      --accent-gold: #FFB300;
+      --accent-gold-bright: #FFE066;
+      --accent-cyan: #00ACC1;
+      --accent-coral: #FF5722;
+      --accent-green: #16A34A;
+      --accent-red: #DC2626;
+
+      --border-soft: #F6BFE0;
+      --border-strong: #E67BB8;
+
+      --shadow-sm: 0 6px 18px rgba(123, 31, 162, 0.11);
+      --shadow-md: 0 14px 30px rgba(233, 30, 99, 0.18);
+      --shadow-lg: 0 22px 46px rgba(36, 8, 54, 0.28);
+
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 22px;
+      --radius-pill: 999px;
+      --transition: all 0.22s ease;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background:
+        radial-gradient(circle at 6% 8%, rgba(255, 59, 154, 0.18), transparent 36%),
+        radial-gradient(circle at 94% 10%, rgba(0, 172, 193, 0.16), transparent 36%),
+        radial-gradient(circle at 80% 78%, rgba(255, 179, 0, 0.18), transparent 42%),
+        radial-gradient(circle at 18% 86%, rgba(123, 31, 162, 0.16), transparent 40%),
+        var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding-bottom: 5.5rem;
+      overflow-x: hidden;
+    }
+
+    button, input, select, textarea { font-family: inherit; }
+    button { cursor: pointer; }
+    img, video { display: block; max-width: 100%; }
+
+    .container {
+      width: 100%;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .hidden { display: none !important; }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 2px solid var(--border-soft);
+      box-shadow: 0 6px 20px rgba(233, 30, 99, 0.09);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.9rem;
+      min-height: 74px;
+      flex-wrap: wrap;
+      padding: 0.45rem 0;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-logo-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--accent-magenta), var(--accent-violet), var(--accent-gold));
+      border: 2px solid var(--accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 6px 16px rgba(233, 30, 99, 0.25);
+    }
+
+    .brand-logo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+    .brand-title {
+      font-size: 1.08rem;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      background: linear-gradient(90deg, var(--accent-magenta), var(--accent-violet), var(--accent-coral));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.15;
+    }
+
+    .brand-sub {
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-main);
+      font-size: 0.86rem;
+      font-weight: 700;
+      padding: 0.5rem 0.78rem;
+      border-radius: var(--radius-pill);
+      transition: var(--transition);
+      background: transparent;
+      border: none;
+    }
+
+    .nav-link:hover {
+      background: linear-gradient(135deg, rgba(233, 30, 99, 0.14), rgba(255, 179, 0, 0.18));
+      color: var(--accent-magenta);
+    }
+
+    .nav-admin-pill {
+      background: linear-gradient(135deg, var(--accent-magenta), var(--accent-violet));
+      color: #FFFFFF;
+      font-weight: 800;
+    }
+
+    .nav-admin-pill:hover {
+      color: #FFE066;
+      filter: brightness(1.06);
+    }
+
+    .hero-section { padding: 1.5rem 0 1.2rem; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .video-reel-card {
+      position: relative;
+      min-height: 365px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: linear-gradient(135deg, #6A1B9A 0%, #E91E63 45%, #FF6D00 80%, #00ACC1 100%);
+      border: 2px solid var(--accent-gold);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5rem;
+      color: var(--text-light);
+    }
+
+    .reel-bg-layer {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.36;
+      z-index: 0;
+    }
+
+    .reel-bg-layer.ken-burns { animation: reelZoom 8s ease-in-out infinite alternate; }
+    .reel-bg-layer.paused { animation-play-state: paused; }
+
+    @keyframes reelZoom {
+      0% { transform: scale(1) translate3d(0, 0, 0); }
+      100% { transform: scale(1.10) translate3d(-1.5%, -1%, 0); }
+    }
+
+    .reel-gradient-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        125deg,
+        rgba(74, 20, 140, 0.84) 0%,
+        rgba(233, 30, 99, 0.72) 52%,
+        rgba(255, 109, 0, 0.66) 100%
+      );
+      z-index: 1;
+    }
+
+    .reel-top, .reel-content, .reel-bottom { position: relative; z-index: 2; }
+
+    .reel-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .live-video-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 224, 102, 0.8);
+      color: var(--accent-gold-bright);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.34rem 0.8rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-gold-bright);
+      box-shadow: 0 0 10px var(--accent-gold-bright);
+      animation: pulseDot 1.4s infinite;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.65; }
+    }
+
+    .reel-content { max-width: 620px; margin: 1.2rem 0; }
+
+    .reel-scene-tag {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-gold-bright);
+      margin-bottom: 0.45rem;
+    }
+
+    .reel-title {
+      font-size: clamp(1.55rem, 3.2vw, 2.35rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 0.65rem;
+      color: #FFFFFF;
+    }
+
+    .reel-desc { font-size: 0.96rem; color: rgba(255, 255, 255, 0.95); margin-bottom: 1.1rem; }
+    .reel-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .reel-bottom { display: flex; flex-direction: column; gap: 0.55rem; }
+
+    .reel-progress-track {
+      width: 100%;
+      height: 5px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.24);
+      overflow: hidden;
+    }
+
+    .reel-progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-gold-bright), #FF4081, #00E5FF);
+      transition: width 0.25s linear;
+    }
+
+    .reel-dots { display: flex; gap: 0.45rem; align-items: center; }
+
+    .reel-dot {
+      width: 26px;
+      height: 6px;
+      border-radius: var(--radius-pill);
+      border: none;
+      background: rgba(255, 255, 255, 0.34);
+      transition: var(--transition);
+    }
+
+    .reel-dot.active { width: 42px; background: var(--accent-gold-bright); }
+
+    .gif-showcase-card {
+      background: linear-gradient(155deg, #FFE4F2 0%, #EDE7F6 48%, #FFF8E1 100%);
+      border: 2px solid var(--accent-magenta);
+      border-radius: var(--radius-lg);
+      padding: 1.15rem;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .gif-header { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+
+    .gif-chip {
+      background: linear-gradient(135deg, var(--accent-magenta), var(--accent-coral), var(--accent-gold));
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.72rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .gif-stage {
+      position: relative;
+      height: 225px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: linear-gradient(135deg, #FF4081, #AB47BC, #FFA726, #26C6DA);
+      border: 2px solid rgba(233, 30, 99, 0.35);
+    }
+
+    .gif-frame-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease, opacity 0.25s ease;
+    }
+
+    .gif-sticker-tag {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(36, 8, 54, 0.88);
+      backdrop-filter: blur(6px);
+      color: #FFFFFF;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .gif-caption { font-size: 0.84rem; color: var(--text-muted); text-align: center; font-weight: 600; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.65rem 1.05rem;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-magenta), var(--accent-violet));
+      color: #FFFFFF;
+      box-shadow: 0 6px 16px rgba(233, 30, 99, 0.28);
+    }
+
+    .btn-primary:hover { transform: translateY(-1px); filter: brightness(1.06); }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-coral));
+      color: #FFFFFF;
+      font-weight: 800;
+      box-shadow: 0 6px 16px rgba(255, 87, 34, 0.30);
+    }
+
+    .btn-gold:hover { transform: translateY(-1px); filter: brightness(1.04); }
+
+    .btn-secondary {
+      background: #FFFFFF;
+      color: var(--text-main);
+      border: 1.5px solid var(--border-strong);
+    }
+
+    .btn-secondary:hover { background: var(--bg-soft); }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #16A34A, #15803D);
+      color: #FFFFFF;
+      box-shadow: 0 6px 16px rgba(22, 163, 74, 0.24);
+    }
+
+    .btn-whatsapp:hover { filter: brightness(1.06); transform: translateY(-1px); }
+
+    .btn-danger { background: var(--accent-red); color: #FFFFFF; }
+    .btn-danger:hover { background: #B91C1C; }
+    .btn-sm { padding: 0.44rem 0.76rem; font-size: 0.79rem; }
+
+    .section-block { padding: 1.5rem 0; }
+
+    .section-card {
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFF8FC 100%);
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-kicker {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--accent-magenta);
+      margin-bottom: 0.2rem;
+    }
+
+    .section-title { font-size: 1.42rem; font-weight: 900; color: var(--text-main); }
+    .section-subtitle { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.15rem; }
+
+    .search-toolbar { display: flex; gap: 0.65rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+    .search-input-wrap { position: relative; flex: 1 1 280px; }
+
+    .search-input {
+      width: 100%;
+      padding: 0.78rem 2.6rem 0.78rem 1rem;
+      border: 1.5px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      font-size: 0.94rem;
+      background: #FFFBFD;
+      color: var(--text-main);
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent-magenta);
+      box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.15);
+    }
+
+    .clear-search-btn {
+      position: absolute;
+      right: 0.55rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--bg-soft);
+      color: var(--text-muted);
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-weight: 800;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      background: linear-gradient(90deg, #FFE3F2, #EDE7F6, #FFF8E1, #E0F7FA);
+      border: 1px solid var(--border-soft);
+      padding: 0.6rem 0.9rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 1.15rem;
+      font-size: 0.86rem;
+    }
+
+    .crumb-btn {
+      background: none;
+      border: none;
+      color: var(--accent-magenta);
+      font-weight: 800;
+      padding: 0.15rem 0.35rem;
+      border-radius: 6px;
+    }
+
+    .crumb-btn:hover { background: rgba(233, 30, 99, 0.12); }
+    .crumb-current { font-weight: 800; color: var(--text-main); padding: 0.15rem 0.35rem; }
+
+    .sub-heading {
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-violet);
+      margin-bottom: 0.75rem;
+    }
+
+    .folders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+      gap: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .folder-card {
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFE6F4 55%, #FFF8E1 100%);
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-align: left;
+      width: 100%;
+      transition: var(--transition);
+    }
+
+    .folder-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent-magenta);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .folder-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(233, 30, 99, 0.18), rgba(255, 179, 0, 0.28));
+      color: var(--accent-magenta);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .folder-name { font-weight: 800; font-size: 0.96rem; color: var(--text-main); }
+    .folder-meta { font-size: 0.77rem; color: var(--text-muted); margin-top: 0.12rem; }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+      gap: 1.15rem;
+    }
+
+    .product-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-magenta);
+      box-shadow: var(--shadow-md);
+    }
+
+    .product-img-box {
+      position: relative;
+      height: 205px;
+      background: linear-gradient(135deg, #FFE3F2, #EDE7F6);
+      overflow: hidden;
+    }
+
+    .product-img-box img { width: 100%; height: 100%; object-fit: cover; }
+
+    .product-folder-tag {
+      position: absolute;
+      top: 0.65rem;
+      left: 0.65rem;
+      background: rgba(36, 8, 54, 0.86);
+      color: #FFE066;
+      font-size: 0.71rem;
+      font-weight: 700;
+      padding: 0.24rem 0.62rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .product-body {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .product-title { font-size: 1rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem; }
+    .product-desc { font-size: 0.84rem; color: var(--text-muted); }
+
+    .product-price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .product-price { font-size: 1.24rem; font-weight: 900; color: var(--accent-magenta); }
+
+    .product-points-pill {
+      font-size: 0.73rem;
+      font-weight: 800;
+      color: var(--accent-violet);
+      background: rgba(255, 179, 0, 0.24);
+      border: 1px solid rgba(255, 179, 0, 0.65);
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .levels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+      gap: 1.15rem;
+    }
+
+    .level-card {
+      position: relative;
+      background: linear-gradient(160deg, #FFFFFF 0%, #FFF0F8 55%, #FFF8E1 100%);
+      border: 2px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 1.45rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .level-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+    .level-card.featured {
+      border-color: var(--accent-magenta);
+      background: linear-gradient(160deg, #FFE1F0 0%, #F3E5F5 55%, #FFF3CD 100%);
+    }
+
+    .level-badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: linear-gradient(135deg, var(--accent-magenta), var(--accent-violet), var(--accent-coral));
+      color: #FFFFFF;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.68rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 0.5rem;
+    }
+
+    .level-name { font-size: 1.45rem; font-weight: 900; color: var(--text-main); }
+
+    .level-min-pts {
+      display: inline-block;
+      margin-top: 0.35rem;
+      background: rgba(255, 179, 0, 0.26);
+      border: 1px solid rgba(255, 179, 0, 0.72);
+      color: #5C3D00;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .level-initial { font-size: 1.65rem; font-weight: 900; color: var(--accent-violet); margin: 0.85rem 0 0.5rem; }
+
+    .level-perks {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      font-size: 0.88rem;
+      color: var(--text-main);
+    }
+
+    .level-perks li::before { content: "✓ "; color: var(--accent-magenta); font-weight: 900; }
+
+    .account-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; align-items: stretch; }
+
+    .vip-card {
+      height: 100%;
+      min-height: 280px;
+      background: linear-gradient(135deg, #6A1B9A 0%, #E91E63 52%, #FF6D00 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 1.45rem;
+      border: 2px solid var(--accent-gold);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .vip-top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+
+    .vip-brand {
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-gold-bright);
+    }
+
+    .vip-level-pill {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 224, 102, 0.75);
+      color: #FFFFFF;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.25rem 0.72rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .vip-name { font-size: 1.3rem; font-weight: 900; }
+    .vip-handle { font-size: 0.85rem; color: rgba(255, 255, 255, 0.92); }
+
+    .vip-points-box {
+      background: rgba(0, 0, 0, 0.24);
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .vip-points-num { font-size: 2rem; font-weight: 900; color: var(--accent-gold-bright); line-height: 1; }
+
+    .progress-bar-bg {
+      width: 100%;
+      height: 9px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.25);
+      overflow: hidden;
+      margin-top: 0.45rem;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-gold-bright), #00E5FF, #FFFFFF);
+      border-radius: var(--radius-pill);
+      transition: width 0.35s ease;
+    }
+
+    .payment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.1rem; }
+
+    .payment-box {
+      background: linear-gradient(160deg, #FFF6FB 0%, #FFFFFF 100%);
+      border: 1.5px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      padding: 1.2rem;
+    }
+
+    .payment-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px dashed var(--border-soft);
+      font-size: 0.9rem;
+    }
+
+    .payment-row:last-child { border-bottom: none; }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+    }
+
+    table { width: 100%; border-collapse: collapse; min-width: 560px; background: #FFFFFF; }
+
+    th, td {
+      padding: 0.75rem 0.85rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-soft);
+      font-size: 0.87rem;
+    }
+
+    th { background: #FFE3F2; font-weight: 800; color: var(--accent-violet); }
+
+    .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.85rem; }
+    .field { display: flex; flex-direction: column; gap: 0.32rem; margin-bottom: 0.8rem; }
+    .field label { font-size: 0.82rem; font-weight: 800; color: var(--text-main); }
+
+    .field input, .field select, .field textarea {
+      width: 100%;
+      padding: 0.65rem 0.8rem;
+      border: 1.5px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      background: #FFFFFF;
+      color: var(--text-main);
+    }
+
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none;
+      border-color: var(--accent-magenta);
+    }
+
+    .check-row {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 0.55rem;
+    }
+
+    .check-row input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent-magenta);
+    }
+
+    .sync-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-pill);
+      background: rgba(22, 163, 74, 0.12);
+      color: #15803D;
+      border: 1px solid rgba(22, 163, 74, 0.35);
+    }
+
+    .floating-admin-btn {
+      position: fixed;
+      left: 1rem;
+      bottom: 1rem;
+      z-index: 95;
+      background: linear-gradient(135deg, var(--accent-magenta), var(--accent-violet));
+      color: #FFFFFF;
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-pill);
+      padding: 0.72rem 1.15rem;
+      font-weight: 800;
+      font-size: 0.85rem;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+
+    .floating-admin-btn:hover { transform: translateY(-2px); }
+
+    .floating-wa-btn {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 95;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #22C55E, #15803D);
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.45rem;
+      font-weight: 900;
+      text-decoration: none;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+
+    .floating-wa-btn:hover { transform: scale(1.06); }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 120;
+      background: rgba(36, 8, 54, 0.68);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-box {
+      width: 100%;
+      max-width: 1020px;
+      max-height: 90vh;
+      overflow-y: auto;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--border-strong);
+      padding: 1.4rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-soft);
+      margin-bottom: 1rem;
+    }
+
+    .admin-tabs { display: flex; gap: 0.45rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+
+    .admin-tab {
+      background: var(--bg-soft);
+      color: var(--text-main);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      padding: 0.55rem 0.9rem;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .admin-tab.active {
+      background: linear-gradient(135deg, var(--accent-magenta), var(--accent-violet));
+      color: #FFFFFF;
+      border-color: transparent;
+    }
+
+    .toast {
+      position: fixed;
+      top: 5.2rem;
+      right: 1rem;
+      z-index: 150;
+      background: var(--bg-plum);
+      color: #FFFFFF;
+      border-left: 4px solid var(--accent-gold);
+      padding: 0.78rem 1.05rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.86rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-lg);
+      max-width: 380px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem 1rem 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.84rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .account-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .floating-admin-btn { padding: 0.62rem 0.95rem; font-size: 0.78rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#inicio" class="brand-box">
+        <div class="brand-logo-wrap" id="headerLogoBox"></div>
+        <div>
+          <div class="brand-title" id="storeBrandTitle">B&amp;H • Hadasa Style</div>
+          <div class="brand-sub" id="storeBrandSub">Tenemos lo mejor para tu estilo</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#catalogo" class="nav-link">Catálogo</a>
+        <a href="#precios" class="nav-link">Menú de Precios</a>
+        <a href="#niveles" class="nav-link" id="navLevelsLink">Niveles y Puntos</a>
+        <a href="#cuenta" class="nav-link" id="navAccountLink">Mi Cuenta</a>
+        <a href="#pagos" class="nav-link">Pagos y Cuotas</a>
+        <button type="button" class="nav-link nav-admin-pill" onclick="openAdminModal()">Panel Privado</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero-section">
+    <div class="container hero-grid">
+      <article class="video-reel-card">
+        <div id="reelBgLayer" class="reel-bg-layer ken-burns"></div>
+        <div class="reel-gradient-overlay"></div>
+
+        <div class="reel-top">
+          <span class="live-video-badge">
+            <span class="live-dot"></span>
+            B&amp;H • Hadasa Style · Estilo &amp; Tendencia
+          </span>
+        </div>
+
+        <div class="reel-content">
+          <div class="reel-scene-tag" id="reelSceneTag">Colección Destacada</div>
+          <h1 class="reel-title" id="reelTitle">Tenemos lo mejor para tu estilo</h1>
+          <p class="reel-desc" id="reelDesc"></p>
+          <div class="reel-actions">
+            <a href="#catalogo" class="btn btn-gold">Explorar Catálogo</a>
+            <a href="#cuenta" class="btn btn-primary" id="heroAccountCta">Activar Mis Puntos</a>
+          </div>
+        </div>
+
+        <div class="reel-bottom">
+          <div class="reel-progress-track">
+            <div class="reel-progress-fill" id="reelProgressFill"></div>
+          </div>
+          <div class="reel-dots" id="reelDots"></div>
+        </div>
+      </article>
+
+      <aside class="gif-showcase-card">
+        <div class="gif-header">
+          <span class="gif-chip">Franelas &amp; Camisitas Tejidas</span>
+          <button type="button" class="btn btn-secondary btn-sm" id="nextGifSlideBtn" onclick="cycleGifSlide()">Ver Siguiente</button>
+        </div>
+
+        <div class="gif-stage">
+          <img
+            id="gifShowcaseImg"
+            class="gif-frame-img"
+            src=""
+            alt="Franelas y camisitas tejidas B&H Hadasa Style"
+          />
+          <div class="gif-sticker-tag">
+            <span id="gifStickerText">Camisitas Tejidas</span>
+            <span style="color:#FFE066;" id="gifPointsBadge">+50 PTS</span>
+          </div>
+        </div>
+
+        <p class="gif-caption" id="gifCaptionText"></p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="catalogo" class="section-block">
+    <div class="container section-card">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Catálogo Organizado</div>
+          <h2 class="section-title">Carpetas, Subcarpetas y Productos</h2>
+          <p class="section-subtitle">Navega por carpetas o usa el buscador para encontrar tus piezas favoritas al instante.</p>
+        </div>
+        <a href="#precios" class="btn btn-secondary btn-sm">Ver Menú de Precios</a>
+      </div>
+
+      <div class="search-toolbar">
+        <div class="search-input-wrap">
+          <input
+            type="text"
+            id="catalogSearchInput"
+            class="search-input"
+            placeholder="Buscar por nombre, franela, camisita tejida, precio o carpeta..."
+            oninput="renderCatalog()"
+          />
+          <button type="button" class="clear-search-btn" title="Limpiar búsqueda" onclick="clearSearch()">×</button>
+        </div>
+      </div>
+
+      <div class="breadcrumbs" id="catalogBreadcrumbs"></div>
+
+      <div id="subfoldersSection">
+        <div class="sub-heading">Carpetas y Subcarpetas</div>
+        <div class="folders-grid" id="foldersGrid"></div>
+      </div>
+
+      <div>
+        <div class="sub-heading" id="productsHeading">Productos Disponibles</div>
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="precios" class="section-block">
+    <div class="container section-card">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Lista Completa</div>
+          <h2 class="section-title">Menú de Precios</h2>
+          <p class="section-subtitle">Consulta rápida de precios actualizados por producto y carpeta.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Carpeta</th>
+              <th>Puntos</th>
+              <th>Precio</th>
+              <th>Pedido</th>
+            </tr>
+          </thead>
+          <tbody id="priceMenuBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="niveles" class="section-block">
+    <div class="container section-card">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Club de Clientas</div>
+          <h2 class="section-title">Niveles y Puntos</h2>
+          <p class="section-subtitle">Cada compra suma <strong id="defaultPointsText">50 puntos</strong>. Alcanza los puntos requeridos para desbloquear apartados y cuotas.</p>
+        </div>
+      </div>
+
+      <div class="levels-grid">
+        <article class="level-card">
+          <div>
+            <span class="level-badge">Nivel 1</span>
+            <h3 class="level-name">Esencial</h3>
+            <div class="level-min-pts">Mínimo: 100 Puntos</div>
+            <div class="level-initial">50% Inicial</div>
+            <ul class="level-perks">
+              <li>Cada compra otorga puntos por fidelidad.</li>
+              <li>Sistema de apartado protegido con el 50% inicial.</li>
+              <li>Entrega garantizada al completar el saldo acordado.</li>
+            </ul>
+          </div>
+          <a href="#cuenta" class="btn btn-primary" onclick="selectDesiredLevel('Esencial')">Elegir Esencial</a>
+        </article>
+
+        <article class="level-card featured">
+          <div>
+            <span class="level-badge">Nivel Frecuente · Nivel 2</span>
+            <h3 class="level-name">Pasarela</h3>
+            <div class="level-min-pts">Mínimo: 250 Puntos</div>
+            <div class="level-initial">50% Inicial + 2 Cuotas</div>
+            <ul class="level-perks">
+              <li>Cada compra otorga puntos por fidelidad.</li>
+              <li>Pagas el 50% inicial y recibes tu pedido de inmediato.</li>
+              <li>Saldo restante dividido en <strong>dos cuotas quincenales</strong> verificadas.</li>
+            </ul>
+          </div>
+          <a href="#cuenta" class="btn btn-gold" onclick="selectDesiredLevel('Pasarela')">Elegir Pasarela</a>
+        </article>
+
+        <article class="level-card">
+          <div>
+            <span class="level-badge">VIP · Nivel 3</span>
+            <h3 class="level-name">Glamour</h3>
+            <div class="level-min-pts">Mínimo: 450 Puntos</div>
+            <div class="level-initial">40% Inicial + 3 Cuotas</div>
+            <ul class="level-perks">
+              <li>Cada compra otorga puntos por fidelidad.</li>
+              <li>Requiere 40% de inicial con entrega inmediata.</li>
+              <li>Saldo fraccionado en <strong>tres cuotas exclusivas</strong> para clientas VIP.</li>
+            </ul>
+          </div>
+          <a href="#cuenta" class="btn btn-primary" onclick="selectDesiredLevel('Glamour')">Elegir Glamour</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cuenta" class="section-block">
+    <div class="container section-card">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Fidelización de Clientas</div>
+          <h2 class="section-title">Mi Cuenta y Puntos</h2>
+          <p class="section-subtitle">Regístrate o consulta tu usuario para ver tus puntos acumulados y tu nivel actual.</p>
+        </div>
+      </div>
+
+      <div class="account-grid">
+        <div class="payment-box">
+          <h3 style="font-size:1.05rem;font-weight:800;margin-bottom:0.75rem;">Activar Usuario de Puntos</h3>
+          <form id="clientRegisterForm" onsubmit="handleClientRegister(event)">
+            <div class="field">
+              <label for="clientFullName">Nombre y Apellido:</label>
+              <input type="text" id="clientFullName" placeholder="Ej: María Pérez" required />
+            </div>
+            <div class="field">
+              <label for="clientPhone">Número de Teléfono / WhatsApp:</label>
+              <input type="tel" id="clientPhone" placeholder="Ej: 04121234567" required />
+            </div>
+            <div class="field">
+              <label for="clientUsername">Usuario deseado:</label>
+              <input type="text" id="clientUsername" placeholder="Ej: mariaperez" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Crear mi Usuario y Activar Puntos</button>
+          </form>
+
+          <hr style="border:none;border-top:1px solid var(--border-soft);margin:1rem 0;" />
+
+          <div class="field" style="margin-bottom:0.5rem;">
+            <label for="lookupUsername">¿Ya tienes usuario? Consulta tus puntos:</label>
+            <div style="display:flex;gap:0.5rem;">
+              <input type="text" id="lookupUsername" placeholder="Ingresa tu usuario" />
+              <button type="button" class="btn btn-secondary" onclick="lookupClientAccount()">Consultar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="activeVipCardBox"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pagos" class="section-block">
+    <div class="container section-card">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Canales Oficiales</div>
+          <h2 class="section-title">Métodos de Pago y Cuotas</h2>
+          <p class="section-subtitle">Reporta tu pago por WhatsApp indicando tu usuario para sumar tus puntos por compra.</p>
+        </div>
+      </div>
+
+      <div class="payment-grid">
+        <div class="payment-box">
+          <h3 style="font-size:1.05rem;font-weight:900;color:var(--accent-magenta);margin-bottom:0.5rem;" id="paymentTitleBox">
+            Pago Móvil
+          </h3>
+          <div class="payment-row">
+            <span><strong>Banco:</strong> <span id="payBankText"></span></span>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="copyText(storeData.storeConfig.bankName, 'Banco copiado')">Copiar</button>
+          </div>
+          <div class="payment-row">
+            <span><strong>Teléfono:</strong> <span id="payPhoneText"></span></span>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="copyText(storeData.storeConfig.payPhone, 'Teléfono copiado')">Copiar</button>
+          </div>
+          <div class="payment-row">
+            <span><strong>Cédula / RIF:</strong> <span id="payIdText"></span></span>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="copyText(storeData.storeConfig.payId, 'Cédula / RIF copiado')">Copiar</button>
+          </div>
+        </div>
+
+        <div class="payment-box">
+          <h3 style="font-size:1.05rem;font-weight:900;color:var(--accent-violet);margin-bottom:0.5rem;">
+            Plan de Cuotas por Nivel
+          </h3>
+          <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:0.85rem;">
+            • <strong>Esencial (100 pts):</strong> 50% inicial para apartado.<br />
+            • <strong>Pasarela (250 pts):</strong> 50% inicial + 2 cuotas quincenales.<br />
+            • <strong>Glamour (450 pts):</strong> 40% inicial + 3 cuotas VIP.
+          </p>
+          <a
+            id="reportPaymentWaLink"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-whatsapp"
+            style="width:100%;"
+          >
+            Reportar Pago por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="font-weight:800;color:var(--text-main);">B&amp;H • Hadasa Style</p>
+      <p id="footerDetailsText"></p>
+    </div>
+  </footer>
+
+  <button type="button" class="floating-admin-btn" onclick="openAdminModal()">
+    ⚙ Panel Privado
+  </button>
+
+  <a
+    id="floatingWaLink"
+    href="#"
+    target="_blank"
+    rel="noopener"
+    class="floating-wa-btn"
+    title="Chatear por WhatsApp"
+  >
+    WA
+  </a>
+
+  <div id="adminModalBackdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div>
+          <div class="section-kicker">Acceso Privado</div>
+          <h2 id="adminModalTitle" class="section-title" style="font-size:1.25rem;">Panel Privado · B&amp;H • Hadasa Style</h2>
+        </div>
+        <div style="display:flex;gap:0.45rem;flex-wrap:wrap;">
+          <button type="button" class="btn btn-gold btn-sm" onclick="publishAllChanges()">Publicar Cambios (GitHub)</button>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="closeAdminModal()">Cerrar</button>
+        </div>
+      </div>
+
+      <div id="adminLoginBox">
+        <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0.85rem;">
+          Ingresa tu clave de acceso (por defecto: <strong>admin123</strong>) para gestionar carpetas, productos, puntos VIP, controles de anuncio/video, métodos de pago, logo y sincronización con Cloudinary y GitHub.
+        </p>
+        <form onsubmit="handleAdminLogin(event)" style="display:flex;gap:0.6rem;flex-wrap:wrap;max-width:440px;">
+          <input type="password" id="adminPasswordInput" class="search-input" placeholder="Clave de acceso" required />
+          <button type="submit" class="btn btn-primary">Ingresar al Panel</button>
+        </form>
+      </div>
+
+      <div id="adminDashboardBox" class="hidden">
+        <div class="admin-tabs">
+          <button type="button" class="admin-tab active" data-tab="products" onclick="switchAdminTab('products')">Productos</button>
+          <button type="button" class="admin-tab" data-tab="folders" onclick="switchAdminTab('folders')">Carpetas</button>
+          <button type="button" class="admin-tab" data-tab="points" onclick="switchAdminTab('points')">Puntos VIP</button>
+          <button type="button" class="admin-tab" data-tab="access" onclick="switchAdminTab('access')">Anuncio, Pagos y Accesos</button>
+          <button type="button" class="admin-tab" data-tab="cloud" onclick="switchAdminTab('cloud')">Cloudinary y GitHub</button>
+          <button type="button" class="admin-tab" data-tab="settings" onclick="switchAdminTab('settings')">Logo, Clave y Respaldo</button>
+        </div>
+
+        <!-- TAB 1: PRODUCTOS -->
+        <div id="adminTab-products">
+          <form id="productForm" onsubmit="handleProductSubmit(event)" class="payment-box" style="margin-bottom:1.1rem;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.5rem;">
+              <h3 id="productFormTitle" style="font-size:1rem;font-weight:800;">Agregar Nuevo Producto</h3>
+              <span class="sync-status-pill" id="cloudinaryStatusBadge">Cloudinary: verificar config</span>
+            </div>
+            <input type="hidden" id="editProductId" />
+            <div class="form-grid">
+              <div class="field">
+                <label for="prodName">Nombre del producto</label>
+                <input type="text" id="prodName" placeholder="Ej: Camisita Tejida Fresas" required />
+              </div>
+              <div class="field">
+                <label for="prodPrice">Precio ($)</label>
+                <input type="number" id="prodPrice" step="0.01" min="0" placeholder="Ej: 20.00" required />
+              </div>
+              <div class="field">
+                <label for="prodPoints">Puntos por compra</label>
+                <input type="number" id="prodPoints" min="0" value="50" required />
+              </div>
+              <div class="field">
+                <label for="prodFolder">Carpeta / Subcarpeta</label>
+                <select id="prodFolder"></select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="prodDesc">Descripción corta</label>
+              <input type="text" id="prodDesc" placeholder="Tallas, colores, estilo o detalles..." />
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="prodImageUrl">URL de imagen (se llena sola al subir a Cloudinary)</label>
+                <input type="text" id="prodImageUrl" placeholder="https://res.cloudinary.com/..." />
+              </div>
+              <div class="field">
+                <label for="prodImageFile">Subir y sincronizar foto con Cloudinary</label>
+                <input type="file" id="prodImageFile" accept="image/*" onchange="handleProductFileUpload(event)" />
+              </div>
+            </div>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+              <button type="submit" class="btn btn-primary" id="saveProductBtn">Guardar Producto</button>
+              <button type="button" class="btn btn-secondary" onclick="resetProductForm()">Limpiar</button>
+            </div>
+          </form>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Carpeta</th>
+                  <th>Precio</th>
+                  <th>Puntos</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="adminProductsBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 2: CARPETAS -->
+        <div id="adminTab-folders" class="hidden">
+          <form onsubmit="handleFolderSubmit(event)" class="payment-box" style="margin-bottom:1.1rem;">
+            <h3 style="font-size:1rem;font-weight:800;margin-bottom:0.8rem;">Crear Carpeta o Subcarpeta</h3>
+            <div class="form-grid">
+              <div class="field">
+                <label for="newFolderName">Nombre de la carpeta</label>
+                <input type="text" id="newFolderName" placeholder="Ej: Franelas, Camisitas Tejidas" required />
+              </div>
+              <div class="field">
+                <label for="newFolderParent">Carpeta padre (opcional)</label>
+                <select id="newFolderParent"></select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear Carpeta</button>
+          </form>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Carpeta</th>
+                  <th>Ruta / Padre</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="adminFoldersBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 3: PUNTOS VIP -->
+        <div id="adminTab-points" class="hidden">
+          <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:0.85rem;">
+            Suma o ajusta puntos a tus clientas registradas.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Clienta</th>
+                  <th>Usuario</th>
+                  <th>Teléfono</th>
+                  <th>Puntos</th>
+                  <th>Nivel</th>
+                  <th>Ajustar</th>
+                </tr>
+              </thead>
+              <tbody id="adminClientsBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 4: ANUNCIO, PAGOS Y ACCESOS -->
+        <div id="adminTab-access" class="hidden">
+          <div class="payment-grid">
+            <div class="payment-box">
+              <h3 style="font-size:1rem;font-weight:800;color:var(--accent-magenta);margin-bottom:0.75rem;">
+                Control del Anuncio Superior (Pausar / Siguiente / Video)
+              </h3>
+              <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:0.75rem;">
+                Maneja aquí los controles del anuncio principal y coloca un video o imagen diferente cuando gustes.
+              </p>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.85rem;">
+                <button type="button" class="btn btn-secondary btn-sm" id="adminToggleReelBtn" onclick="toggleReelPlay()">Pausar Anuncio</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="nextReelScene()">Siguiente Escena</button>
+              </div>
+              <div class="field">
+                <label for="cfgCustomMediaUrl">URL de video (.mp4) o imagen diferente para el anuncio (opcional)</label>
+                <input type="text" id="cfgCustomMediaUrl" placeholder="https://... (deja vacío para usar las escenas predeterminadas)" />
+              </div>
+              <div class="field">
+                <label for="cfgHeroTitle">Título principal del anuncio</label>
+                <input type="text" id="cfgHeroTitle" />
+              </div>
+              <div class="field">
+                <label for="cfgHeroDesc">Descripción del anuncio</label>
+                <textarea id="cfgHeroDesc" rows="2"></textarea>
+              </div>
+
+              <h4 style="font-size:0.9rem;font-weight:800;color:var(--accent-violet);margin:0.8rem 0 0.45rem;">
+                Accesos Visibles para el Público
+              </h4>
+              <label class="check-row">
+                <input type="checkbox" id="cfgShowFloatingWa" />
+                Mostrar botón flotante de WhatsApp
+              </label>
+              <label class="check-row">
+                <input type="checkbox" id="cfgShowAccountSection" />
+                Mostrar sección "Mi Cuenta y Puntos"
+              </label>
+              <label class="check-row">
+                <input type="checkbox" id="cfgShowLevelsSection" />
+                Mostrar sección "Niveles y Puntos"
+              </label>
+              <label class="check-row">
+                <input type="checkbox" id="cfgShowPaymentsSection" />
+                Mostrar sección "Métodos de Pago y Cuotas"
+              </label>
+              <label class="check-row">
+                <input type="checkbox" id="cfgShowPriceMenuSection" />
+                Mostrar sección "Menú de Precios"
+              </label>
+            </div>
+
+            <div class="payment-box">
+              <h3 style="font-size:1rem;font-weight:800;color:var(--accent-violet);margin-bottom:0.75rem;">
+                Datos de Pago Móvil, Marca y Puntos
+              </h3>
+              <div class="field">
+                <label for="cfgBrandSub">Frase debajo de B&amp;H • Hadasa Style</label>
+                <input type="text" id="cfgBrandSub" />
+              </div>
+              <div class="field">
+                <label for="cfgWhatsappNumber">Número de WhatsApp (con código país)</label>
+                <input type="text" id="cfgWhatsappNumber" />
+              </div>
+              <div class="field">
+                <label for="cfgDefaultPoints">Puntos por compra por defecto</label>
+                <input type="number" id="cfgDefaultPoints" min="0" />
+              </div>
+              <div class="field">
+                <label for="cfgBankName">Banco</label>
+                <input type="text" id="cfgBankName" />
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="cfgPayPhone">Teléfono Pago Móvil</label>
+                  <input type="text" id="cfgPayPhone" />
+                </div>
+                <div class="field">
+                  <label for="cfgPayId">Cédula / RIF</label>
+                  <input type="text" id="cfgPayId" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:0.9rem;">
+            <button type="button" class="btn btn-primary" onclick="saveStoreAccessConfig()">Guardar Cambios de Tienda</button>
+          </div>
+        </div>
+
+        <!-- TAB 5: CLOUDINARY Y GITHUB -->
+        <div id="adminTab-cloud" class="hidden">
+          <div class="payment-grid">
+            <div class="payment-box">
+              <h3 style="font-size:1rem;font-weight:800;color:var(--accent-violet);margin-bottom:0.75rem;">
+                Cloudinary (Sincronización de Fotos y Logo)
+              </h3>
+              <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:0.75rem;">
+                Al configurar tu <strong>Cloud Name</strong> y <strong>Upload Preset (Unsigned)</strong>, las fotos y logos que subas se envían a Cloudinary y generan su enlace público automáticamente.
+              </p>
+              <div class="field">
+                <label for="cloudNameInput">Cloud Name</label>
+                <input type="text" id="cloudNameInput" placeholder="Ej: dxxxxxx" />
+              </div>
+              <div class="field">
+                <label for="cloudPresetInput">Upload Preset (Unsigned)</label>
+                <input type="text" id="cloudPresetInput" placeholder="Ej: hadasa_preset" />
+              </div>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                <button type="button" class="btn btn-primary btn-sm" onclick="saveCloudConfig()">Guardar Cloudinary</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="testCloudinaryConnection()">Probar Conexión</button>
+              </div>
+            </div>
+
+            <div class="payment-box">
+              <h3 style="font-size:1rem;font-weight:800;color:var(--accent-magenta);margin-bottom:0.75rem;">
+                GitHub (Sincronización Pública del JSON)
+              </h3>
+              <div class="field">
+                <label for="ghOwnerInput">Usuario de GitHub</label>
+                <input type="text" id="ghOwnerInput" placeholder="Ej: breidyacuna" />
+              </div>
+              <div class="field">
+                <label for="ghRepoInput">Repositorio</label>
+                <input type="text" id="ghRepoInput" placeholder="Ej: B-H-Hadasa-Style" />
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="ghBranchInput">Rama</label>
+                  <input type="text" id="ghBranchInput" placeholder="main" />
+                </div>
+                <div class="field">
+                  <label for="ghPathInput">Ruta del archivo JSON</label>
+                  <input type="text" id="ghPathInput" placeholder="data/store-data.json" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="ghTokenInput">GitHub Personal Access Token (solo se guarda en tu navegador)</label>
+                <input type="password" id="ghTokenInput" placeholder="ghp_..." />
+              </div>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                <button type="button" class="btn btn-primary btn-sm" onclick="saveGithubConfig()">Guardar Config</button>
+                <button type="button" class="btn btn-gold btn-sm" onclick="pushToGithub()">Subir Datos a GitHub</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="pullFromGithub()">Cargar desde GitHub</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 6: LOGO, CLAVE Y RESPALDO -->
+        <div id="adminTab-settings" class="hidden">
+          <div class="payment-grid">
+            <div class="payment-box">
+              <h3 style="font-size:1rem;font-weight:800;margin-bottom:0.75rem;">Logo de B&amp;H • Hadasa Style</h3>
+              <div class="field">
+                <label for="logoUrlInput">URL de tu imagen de logo</label>
+                <input type="text" id="logoUrlInput" placeholder="https://..." />
+              </div>
+              <div class="field">
+                <label for="logoFileInput">Subir y sincronizar logo con Cloudinary</label>
+                <input type="file" id="logoFileInput" accept="image/*" onchange="handleLogoUpload(event)" />
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" onclick="saveLogoUrl()">Guardar Logo</button>
+            </div>
+
+            <div class="payment-box">
+              <h3 style="font-size:1rem;font-weight:800;margin-bottom:0.75rem;">Cambiar Clave de Administración</h3>
+              <div class="field">
+                <label for="newAdminPasswordInput">Nueva clave</label>
+                <input type="password" id="newAdminPasswordInput" placeholder="Escribe una nueva clave" />
+              </div>
+              <button type="button" class="btn btn-gold btn-sm" onclick="changeAdminPassword()">Actualizar Clave</button>
+
+              <hr style="border:none;border-top:1px solid var(--border-soft);margin:1rem 0;" />
+
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="exportBackupJson()">Exportar JSON</button>
+                <label class="btn btn-secondary btn-sm" style="margin:0;">
+                  Importar JSON
+                  <input type="file" accept=".json,application/json" style="display:none;" onchange="importBackupJson(event)" />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastBox" class="toast hidden"></div>
+
+  <script>
+    const STORAGE_KEY = 'bh_hadasa_style_v6_data';
+
+    const REEL_SCENES = [
+      {
+        tag: 'Colección Destacada',
+        title: 'Tenemos lo mejor para tu estilo',
+        desc: 'Piezas llenas de color, franelas, camisitas tejidas y moda pensada para destacar cada día.',
+        img: 'https://placehold.co/960x540/E91E63/FFE066?text=Tenemos+lo+Mejor+para+tu+Estilo+%7C+B%26H+Hadasa+Style'
+      },
+      {
+        tag: 'Franelas & Camisitas Tejidas',
+        title: 'Detalles tejidos y frescura en cada prenda',
+        desc: 'Camisitas tejidas y franelas con caída suave que combinan con todo y suman puntos en cada compra.',
+        img: 'https://placehold.co/960x540/7B1FA2/FFFFFF?text=Franelas+%26+Camisitas+Tejidas+%7C+Hadasa+Style'
+      },
+      {
+        tag: 'Club de Clientas',
+        title: 'Avanza por niveles y disfruta cuotas según tus puntos',
+        desc: 'Sube de Esencial a Pasarela y Glamour con planes de pago flexibles.',
+        img: 'https://placehold.co/960x540/FF5722/FFF8E1?text=Club+VIP+%C2%B7+Esencial+%C2%B7+Pasarela+%C2%B7+Glamour'
+      }
+    ];
+
+    const GIF_SLIDES = [
+      {
+        badge: 'Camisitas Tejidas',
+        caption: 'Camisitas tejidas suaves y con estilo para lucir fresca y elegante.',
+        img: 'https://placehold.co/640x440/E91E63/FFFFFF?text=Camisitas+Tejidas+1'
+      },
+      {
+        badge: 'Franelas Multicolor',
+        caption: 'Franelas versátiles y llenas de color para tu outfit diario.',
+        img: 'https://placehold.co/640x440/7B1FA2/FFE066?text=Franelas+Color+2'
+      },
+      {
+        badge: 'Tejidos & Novedades',
+        caption: 'Combinaciones de franelas y camisitas tejidas listas para pedir.',
+        img: 'https://placehold.co/640x440/00ACC1/FFFFFF?text=Tejidos+%26+Franelas+3'
+      }
+    ];
+
+    function getDefaultData() {
+      return {
+        adminPasswordHash: 'admin123',
+        logoUrl: '',
+        currentFolderId: 'root',
+        selectedClientUsername: 'mariaperez',
+        storeConfig: {
+          brandSub: 'Tenemos lo mejor para tu estilo',
+          whatsappNumber: '584167172744',
+          defaultPoints: 50,
+          bankName: 'Banco Provincial',
+          payPhone: '04167172744',
+          payId: '27888181',
+          heroTitle: 'Tenemos lo mejor para tu estilo',
+          heroDesc: 'Piezas llenas de color, franelas, camisitas tejidas y moda pensada para destacar cada día.',
+          customMediaUrl: '',
+          visibility: {
+            showFloatingWa: true,
+            showAccountSection: true,
+            showLevelsSection: true,
+            showPaymentsSection: true,
+            showPriceMenuSection: true
+          }
+        },
+        cloud: {
+          cloudinary: { cloudName: '', uploadPreset: '' },
+          github: {
+            owner: 'breidyacuna',
+            repo: 'B-H-Hadasa-Style',
+            branch: 'main',
+            path: 'data/store-data.json',
+            token: ''
+          }
+        },
+        folders: [
+          { id: 'f-franelas', name: 'Franelas', parentId: 'root' },
+          { id: 'f-tejidas', name: 'Camisitas Tejidas', parentId: 'root' },
+          { id: 'f-conjuntos', name: 'Conjuntos y Novedades', parentId: 'root' },
+          { id: 'f-sub-franelas-basicas', name: 'Franelas Estampadas y Lisas', parentId: 'f-franelas' },
+          { id: 'f-sub-tejidos-finos', name: 'Tejidos con Detalles', parentId: 'f-tejidas' }
+        ],
+        products: [
+          {
+            id: 'p-1',
+            name: 'Camisita Tejida Brisa',
+            price: 22,
+            points: 50,
+            folderId: 'f-sub-tejidos-finos',
+            desc: 'Camisita tejida fresca y ligera, ideal para combinar con jeans o faldas.',
+            image: 'https://placehold.co/500x400/FF80AB/240836?text=Camisita+Tejida+Brisa'
+          },
+          {
+            id: 'p-2',
+            name: 'Franela Casual Color',
+            price: 16,
+            points: 50,
+            folderId: 'f-sub-franelas-basicas',
+            desc: 'Franela cómoda de algodón con corte favorecedor y colores vivos.',
+            image: 'https://placehold.co/500x400/CE93D8/240836?text=Franela+Casual+Color'
+          },
+          {
+            id: 'p-3',
+            name: 'Camisita Tejida Lazos & Flores',
+            price: 24,
+            points: 50,
+            folderId: 'f-tejidas',
+            desc: 'Tejido suave con detalles delicados y excelente ajuste.',
+            image: 'https://placehold.co/500x400/FFD180/240836?text=Camisita+Tejida+Detalles'
+          },
+          {
+            id: 'p-4',
+            name: 'Franela Boutique Hadasa',
+            price: 18,
+            points: 50,
+            folderId: 'f-franelas',
+            desc: 'Franela de uso diario con acabado suave y estilo actual.',
+            image: 'https://placehold.co/500x400/80DEEA/240836?text=Franela+Boutique'
+          }
+        ],
+        clients: [
+          {
+            fullName: 'María Pérez',
+            phone: '04121234567',
+            username: 'mariaperez',
+            points: 150
+          }
+        ]
+      };
+    }
+
+    let storeData = loadStoreData();
+    let isAdminAuthenticated = false;
+    let reelIndex = 0;
+    let reelPlaying = true;
+    let reelElapsed = 0;
+    let gifIndex = 0;
+
+    function loadStoreData() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return getDefaultData();
+        const parsed = JSON.parse(raw);
+        const def = getDefaultData();
+        return {
+          ...def,
+          ...parsed,
+          storeConfig: {
+            ...def.storeConfig,
+            ...(parsed.storeConfig || {}),
+            visibility: {
+              ...def.storeConfig.visibility,
+              ...(parsed.storeConfig?.visibility || {})
+            }
+          },
+          cloud: {
+            cloudinary: { ...def.cloud.cloudinary, ...(parsed.cloud?.cloudinary || {}) },
+            github: { ...def.cloud.github, ...(parsed.cloud?.github || {}) }
+          },
+          folders: Array.isArray(parsed.folders) && parsed.folders.length ? parsed.folders : def.folders,
+          products: Array.isArray(parsed.products) && parsed.products.length ? parsed.products : def.products,
+          clients: Array.isArray(parsed.clients) && parsed.clients.length ? parsed.clients : def.clients
+        };
+      } catch (err) {
+        return getDefaultData();
+      }
+    }
+
+    function saveStoreData() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(storeData));
+      } catch (err) {
+        showToast('Aviso: límite de almacenamiento local alcanzado.');
+      }
+    }
+
+    function showToast(msg) {
+      const box = document.getElementById('toastBox');
+      box.textContent = msg;
+      box.classList.remove('hidden');
+      clearTimeout(showToast._timer);
+      showToast._timer = setTimeout(() => {
+        box.classList.add('hidden');
+      }, 3500);
+    }
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function getWhatsappNumber() {
+      return String(storeData.storeConfig?.whatsappNumber || '584167172744').replace(/\D/g, '') || '584167172744';
+    }
+
+    function updateCloudinaryBadge() {
+      const badge = document.getElementById('cloudinaryStatusBadge');
+      if (!badge) return;
+      const { cloudName, uploadPreset } = storeData.cloud?.cloudinary || {};
+      if (cloudName && uploadPreset) {
+        badge.textContent = `Cloudinary activo (${cloudName})`;
+      } else {
+        badge.textContent = 'Cloudinary pendiente de configurar';
+      }
+    }
+
+    function applyStoreConfigToUI() {
+      const cfg = storeData.storeConfig || {};
+      const vis = cfg.visibility || {};
+      const waNum = getWhatsappNumber();
+
+      const bankVal = (cfg.bankName && cfg.bankName.trim()) ? cfg.bankName.trim() : 'Por configurar';
+      const phoneVal = (cfg.payPhone && cfg.payPhone.trim()) ? cfg.payPhone.trim() : 'Por configurar';
+      const idVal = (cfg.payId && cfg.payId.trim()) ? cfg.payId.trim() : 'Por configurar';
+
+      document.getElementById('storeBrandSub').textContent = cfg.brandSub || 'Tenemos lo mejor para tu estilo';
+
+      document.getElementById('floatingWaLink').classList.toggle('hidden', vis.showFloatingWa === false);
+      document.getElementById('cuenta').classList.toggle('hidden', vis.showAccountSection === false);
+      document.getElementById('navAccountLink').classList.toggle('hidden', vis.showAccountSection === false);
+      document.getElementById('heroAccountCta').classList.toggle('hidden', vis.showAccountSection === false);
+
+      document.getElementById('niveles').classList.toggle('hidden', vis.showLevelsSection === false);
+      document.getElementById('navLevelsLink').classList.toggle('hidden', vis.showLevelsSection === false);
+
+      document.getElementById('pagos').classList.toggle('hidden', vis.showPaymentsSection === false);
+      document.getElementById('precios').classList.toggle('hidden', vis.showPriceMenuSection === false);
+
+      document.getElementById('defaultPointsText').textContent = `${Number(cfg.defaultPoints ?? 50)} puntos`;
+      document.getElementById('paymentTitleBox').textContent = `Pago Móvil · ${bankVal}`;
+      document.getElementById('payBankText').textContent = bankVal;
+      document.getElementById('payPhoneText').textContent = phoneVal;
+      document.getElementById('payIdText').textContent = idVal;
+
+      const reportMsg = `Hola B&H • Hadasa Style, deseo reportar un pago a ${bankVal} (${phoneVal} / ${idVal}).`;
+      document.getElementById('reportPaymentWaLink').href = `https://wa.me/${waNum}?text=${encodeURIComponent(reportMsg)}`;
+
+      const floatMsg = 'Hola B&H • Hadasa Style, quisiera información sobre sus productos.';
+      document.getElementById('floatingWaLink').href = `https://wa.me/${waNum}?text=${encodeURIComponent(floatMsg)}`;
+
+      document.getElementById('footerDetailsText').textContent =
+        `${cfg.brandSub || 'Tenemos lo mejor para tu estilo'} · Niveles Esencial, Pasarela y Glamour · ${bankVal}: ${phoneVal} · C.I/RIF: ${idVal}`;
+
+      updateCloudinaryBadge();
+    }
+
+    function copyText(text, label) {
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => showToast(label)).catch(() => fallbackCopy(text, label));
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+
+    function fallbackCopy(text, label) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast(label);
+      } catch (e) {
+        showToast('Copia manual: ' + text);
+      }
+      document.body.removeChild(ta);
+    }
+
+    /* =======================================================================
+       ANUNCIO PRINCIPAL Y PASE DE FRANELAS / CAMISITAS TEJIDAS
+       ======================================================================= */
+    function renderReelDots() {
+      const dotsWrap = document.getElementById('reelDots');
+      dotsWrap.innerHTML = REEL_SCENES.map((_, idx) =>
+        `<button type="button" class="reel-dot ${idx === reelIndex ? 'active' : ''}" onclick="setReelScene(${idx})" aria-label="Escena ${idx + 1}"></button>`
+      ).join('');
+    }
+
+    function applyReelScene(idx) {
+      reelIndex = (idx + REEL_SCENES.length) % REEL_SCENES.length;
+      reelElapsed = 0;
+      const scene = REEL_SCENES[reelIndex];
+      const bg = document.getElementById('reelBgLayer');
+      const customMedia = (storeData.storeConfig?.customMediaUrl || '').trim();
+      const mediaUrl = customMedia || scene.img;
+      bg.style.backgroundImage = `url('${mediaUrl}')`;
+      document.getElementById('reelSceneTag').textContent = scene.tag;
+      document.getElementById('reelTitle').textContent =
+        idx === 0 && storeData.storeConfig?.heroTitle ? storeData.storeConfig.heroTitle : scene.title;
+      document.getElementById('reelDesc').textContent =
+        idx === 0 && storeData.storeConfig?.heroDesc ? storeData.storeConfig.heroDesc : scene.desc;
+      document.getElementById('reelProgressFill').style.width = '0%';
+      renderReelDots();
+    }
+
+    function setReelScene(idx) { applyReelScene(idx); }
+    function nextReelScene() { applyReelScene(reelIndex + 1); }
+
+    function toggleReelPlay() {
+      reelPlaying = !reelPlaying;
+      const adminBtn = document.getElementById('adminToggleReelBtn');
+      const bg = document.getElementById('reelBgLayer');
+      if (reelPlaying) {
+        if (adminBtn) adminBtn.textContent = 'Pausar Anuncio';
+        bg.classList.remove('paused');
+      } else {
+        if (adminBtn) adminBtn.textContent = 'Reproducir Anuncio';
+        bg.classList.add('paused');
+      }
+    }
+
+    setInterval(() => {
+      if (!reelPlaying) return;
+      reelElapsed += 100;
+      const duration = 5500;
+      const pct = Math.min(100, (reelElapsed / duration) * 100);
+      document.getElementById('reelProgressFill').style.width = pct + '%';
+      if (reelElapsed >= duration) applyReelScene(reelIndex + 1);
+    }, 100);
+
+    function applyGifSlide(idx) {
+      gifIndex = ((idx % GIF_SLIDES.length) + GIF_SLIDES.length) % GIF_SLIDES.length;
+      const slide = GIF_SLIDES[gifIndex];
+      const img = document.getElementById('gifShowcaseImg');
+      if (!img || !slide) return;
+      img.style.opacity = '0.35';
+      img.src = slide.img;
+      img.onload = () => {
+        img.style.opacity = '1';
+      };
+      setTimeout(() => {
+        img.style.opacity = '1';
+      }, 150);
+      document.getElementById('gifStickerText').textContent = slide.badge;
+      document.getElementById('gifPointsBadge').textContent = `+${Number(storeData.storeConfig?.defaultPoints ?? 50)} PTS`;
+      document.getElementById('gifCaptionText').textContent = slide.caption;
+    }
+
+    function cycleGifSlide() {
+      applyGifSlide(gifIndex + 1);
+    }
+
+    setInterval(() => {
+      applyGifSlide(gifIndex + 1);
+    }, 3600);
+
+    /* =======================================================================
+       LOGO Y CATÁLOGO
+       ======================================================================= */
+    function renderLogo() {
+      const box = document.getElementById('headerLogoBox');
+      if (storeData.logoUrl) {
+        box.innerHTML = `<img src="${escapeHtml(storeData.logoUrl)}" alt="Logo B&H • Hadasa Style" onerror="this.parentElement.innerHTML='<span style=&quot;color:#FFFFFF;font-weight:900;font-size:0.95rem;&quot;>B&amp;H</span>'" />`;
+      } else {
+        box.innerHTML = `<span style="color:#FFFFFF;font-weight:900;font-size:0.95rem;">B&amp;H</span>`;
+      }
+    }
+
+    function getFolderById(id) {
+      return storeData.folders.find(f => f.id === id) || null;
+    }
+
+    function getFolderPathLabel(folderId) {
+      if (!folderId || folderId === 'root') return 'Inicio';
+      const parts = [];
+      let curr = getFolderById(folderId);
+      let guard = 0;
+      while (curr && guard < 25) {
+        parts.unshift(curr.name);
+        curr = curr.parentId && curr.parentId !== 'root' ? getFolderById(curr.parentId) : null;
+        guard++;
+      }
+      return parts.join(' / ') || 'Inicio';
+    }
+
+    function openFolder(folderId) {
+      storeData.currentFolderId = folderId || 'root';
+      saveStoreData();
+      renderCatalog();
+    }
+
+    function clearSearch() {
+      document.getElementById('catalogSearchInput').value = '';
+      renderCatalog();
+    }
+
+    function renderBreadcrumbs() {
+      const bc = document.getElementById('catalogBreadcrumbs');
+      const currId = storeData.currentFolderId || 'root';
+      if (currId === 'root') {
+        bc.innerHTML = `<span class="crumb-current">📁 Todas las Carpetas</span>`;
+        return;
+      }
+      const chain = [];
+      let curr = getFolderById(currId);
+      let guard = 0;
+      while (curr && guard < 25) {
+        chain.unshift(curr);
+        curr = curr.parentId && curr.parentId !== 'root' ? getFolderById(curr.parentId) : null;
+        guard++;
+      }
+      let html = `<button type="button" class="crumb-btn" onclick="openFolder('root')">📁 Inicio</button>`;
+      chain.forEach((f, idx) => {
+        html += `<span>/</span>`;
+        if (idx === chain.length - 1) {
+          html += `<span class="crumb-current">${escapeHtml(f.name)}</span>`;
+        } else {
+          html += `<button type="button" class="crumb-btn" onclick="openFolder('${escapeHtml(f.id)}')">${escapeHtml(f.name)}</button>`;
+        }
+      });
+      bc.innerHTML = html;
+    }
+
+    function buildProductWhatsappUrl(product) {
+      const waNum = getWhatsappNumber();
+      const userTag = storeData.selectedClientUsername ? ` (Usuario: ${storeData.selectedClientUsername})` : '';
+      const msg = `Hola B&H • Hadasa Style, me interesa "${product.name}" a $${Number(product.price).toFixed(2)}${userTag}.`;
+      return `https://wa.me/${waNum}?text=${encodeURIComponent(msg)}`;
+    }
+
+    function renderCatalog() {
+      renderBreadcrumbs();
+      const query = (document.getElementById('catalogSearchInput').value || '').trim().toLowerCase();
+      const currFolderId = storeData.currentFolderId || 'root';
+      const foldersGrid = document.getElementById('foldersGrid');
+      const subfoldersSection = document.getElementById('subfoldersSection');
+      const productsGrid = document.getElementById('productsGrid');
+      const productsHeading = document.getElementById('productsHeading');
+
+      if (query) {
+        subfoldersSection.classList.add('hidden');
+        productsHeading.textContent = `Resultados de búsqueda para "${query}"`;
+        const matches = storeData.products.filter(p => {
+          const folderName = getFolderPathLabel(p.folderId).toLowerCase();
+          return (
+            String(p.name || '').toLowerCase().includes(query) ||
+            String(p.desc || '').toLowerCase().includes(query) ||
+            String(p.price || '').toLowerCase().includes(query) ||
+            folderName.includes(query)
+          );
+        });
+        renderProductCards(productsGrid, matches);
+        return;
+      }
+
+      subfoldersSection.classList.remove('hidden');
+      const childFolders = storeData.folders.filter(f => (f.parentId || 'root') === currFolderId);
+      if (childFolders.length === 0) {
+        foldersGrid.innerHTML = `<p style="font-size:0.86rem;color:var(--text-muted);">No hay subcarpetas en esta ubicación.</p>`;
+      } else {
+        foldersGrid.innerHTML = childFolders.map(f => {
+          const subCount = storeData.folders.filter(sf => sf.parentId === f.id).length;
+          const prodCount = storeData.products.filter(p => p.folderId === f.id).length;
+          return `
+            <button type="button" class="folder-card" onclick="openFolder('${escapeHtml(f.id)}')">
+              <div class="folder-icon">📁</div>
+              <div>
+                <div class="folder-name">${escapeHtml(f.name)}</div>
+                <div class="folder-meta">${subCount} subcarpeta(s) · ${prodCount} producto(s)</div>
+              </div>
+            </button>
+          `;
+        }).join('');
+      }
+
+      const folderProducts = storeData.products.filter(p => (p.folderId || 'root') === currFolderId);
+      productsHeading.textContent = currFolderId === 'root'
+        ? 'Productos en Inicio'
+        : `Productos en ${getFolderPathLabel(currFolderId)}`;
+      renderProductCards(productsGrid, folderProducts);
+    }
+
+    function renderProductCards(container, list) {
+      if (!list.length) {
+        container.innerHTML = `<p style="font-size:0.9rem;color:var(--text-muted);">No hay productos aquí por el momento.</p>`;
+        return;
+      }
+      const defPts = Number(storeData.storeConfig?.defaultPoints ?? 50);
+      container.innerHTML = list.map(p => {
+        const imgSrc = p.image || `https://placehold.co/500x400/FF80AB/240836?text=${encodeURIComponent(p.name)}`;
+        return `
+          <article class="product-card">
+            <div class="product-img-box">
+              <img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(p.name)}" onerror="this.src='https://placehold.co/500x400/FF80AB/240836?text=B%26H+Hadasa+Style'" />
+              <span class="product-folder-tag">${escapeHtml(getFolderPathLabel(p.folderId))}</span>
+            </div>
+            <div class="product-body">
+              <div>
+                <h3 class="product-title">${escapeHtml(p.name)}</h3>
+                <p class="product-desc">${escapeHtml(p.desc || 'Disponible en B&H • Hadasa Style.')}</p>
+              </div>
+              <div>
+                <div class="product-price-row">
+                  <span class="product-price">$${Number(p.price || 0).toFixed(2)}</span>
+                  <span class="product-points-pill">+${Number(p.points ?? defPts)} pts</span>
+                </div>
+                <a href="${buildProductWhatsappUrl(p)}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm" style="width:100%;">
+                  Pedir por WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderPriceMenu() {
+      const tbody = document.getElementById('priceMenuBody');
+      if (!storeData.products.length) {
+        tbody.innerHTML = `<tr><td colspan="5">No hay productos registrados en el menú de precios.</td></tr>`;
+        return;
+      }
+      const defPts = Number(storeData.storeConfig?.defaultPoints ?? 50);
+      tbody.innerHTML = storeData.products.map(p => `
+        <tr>
+          <td><strong>${escapeHtml(p.name)}</strong></td>
+          <td>${escapeHtml(getFolderPathLabel(p.folderId))}</td>
+          <td>+${Number(p.points ?? defPts)} pts</td>
+          <td><strong style="color:var(--accent-magenta);">$${Number(p.price || 0).toFixed(2)}</strong></td>
+          <td>
+            <a href="${buildProductWhatsappUrl(p)}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+              WhatsApp
+            </a>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    /* =======================================================================
+       NIVELES Y CUENTA DE PUNTOS
+       ======================================================================= */
+    function getLevelByPoints(pts) {
+      const n = Number(pts || 0);
+      if (n >= 450) {
+        return { name: 'Glamour', nextName: null, min: 450, nextMin: 450, cuotaInfo: '40% Inicial + 3 Cuotas VIP' };
+      }
+      if (n >= 250) {
+        return { name: 'Pasarela', nextName: 'Glamour', min: 250, nextMin: 450, cuotaInfo: '50% Inicial + 2 Cuotas Quincenales' };
+      }
+      return { name: 'Esencial', nextName: 'Pasarela', min: 0, nextMin: 250, cuotaInfo: '50% Inicial Apartado (100 pts mínimo)' };
+    }
+
+    function selectDesiredLevel(levelName) {
+      showToast(`Nivel seleccionado: ${levelName}. Registra o consulta tu usuario para ver tu progreso.`);
+    }
+
+    function handleClientRegister(e) {
+      e.preventDefault();
+      const fullName = document.getElementById('clientFullName').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
+      const username = document.getElementById('clientUsername').value.trim().toLowerCase().replace(/\s+/g, '');
+      if (!fullName || !phone || !username) return;
+
+      const existingIdx = storeData.clients.findIndex(c => c.username === username);
+      if (existingIdx >= 0) {
+        storeData.clients[existingIdx].fullName = fullName;
+        storeData.clients[existingIdx].phone = phone;
+        showToast(`Usuario @${username} actualizado y activado.`);
+      } else {
+        storeData.clients.push({ fullName, phone, username, points: 0 });
+        showToast(`¡Usuario @${username} creado!`);
+      }
+
+      storeData.selectedClientUsername = username;
+      saveStoreData();
+      renderClientVipCard();
+      renderAdminTables();
+      document.getElementById('clientRegisterForm').reset();
+    }
+
+    function lookupClientAccount() {
+      const rawUser = (document.getElementById('lookupUsername').value || '').trim().toLowerCase();
+      if (!rawUser) {
+        showToast('Escribe un usuario para consultar.');
+        return;
+      }
+      const found = storeData.clients.find(c => c.username === rawUser);
+      if (!found) {
+        showToast(`No se encontró el usuario @${rawUser}.`);
+        return;
+      }
+      storeData.selectedClientUsername = found.username;
+      saveStoreData();
+      renderClientVipCard();
+      showToast(`Bienvenido/a ${found.fullName} (${found.points} puntos).`);
+    }
+
+    function renderClientVipCard() {
+      const box = document.getElementById('activeVipCardBox');
+      if (!box) return;
+      const navLink = document.getElementById('navAccountLink');
+      const client = (Array.isArray(storeData.clients) && storeData.clients.find(c => c.username === storeData.selectedClientUsername))
+        || (Array.isArray(storeData.clients) && storeData.clients[0])
+        || { fullName: 'Clienta VIP', phone: '04120000000', username: 'clientavip', points: 50 };
+
+      if (navLink) navLink.textContent = `@${client.username} (${client.points} pts)`;
+      const lvl = getLevelByPoints(client.points);
+      let pct = 100;
+      let missingText = '¡Nivel máximo Glamour alcanzado!';
+      if (lvl.nextName) {
+        const span = lvl.nextMin - lvl.min;
+        pct = Math.max(10, Math.min(100, Math.round(((client.points - lvl.min) / span) * 100)));
+        const faltan = Math.max(0, lvl.nextMin - client.points);
+        missingText = `Te faltan ${faltan} puntos para llegar a ${lvl.nextName}`;
+      }
+
+      box.innerHTML = `
+        <div class="vip-card">
+          <div>
+            <div class="vip-top">
+              <span class="vip-brand">Tarjeta VIP · B&amp;H • Hadasa Style</span>
+              <span class="vip-level-pill">Nivel: ${escapeHtml(lvl.name)}</span>
+            </div>
+            <div class="vip-name">${escapeHtml(client.fullName)}</div>
+            <div class="vip-handle">@${escapeHtml(client.username)} · Tel: ${escapeHtml(client.phone)}</div>
+          </div>
+
+          <div class="vip-points-box">
+            <div>
+              <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;opacity:0.9;">Puntos Acumulados</div>
+              <div style="font-size:0.82rem;opacity:0.95;margin-top:0.2rem;">${escapeHtml(lvl.cuotaInfo)}</div>
+            </div>
+            <div class="vip-points-num">${Number(client.points || 0)}</div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.78rem;font-weight:700;">
+              <span>${escapeHtml(missingText)}</span>
+              <span>${pct}%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width:${pct}%;"></div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    /* =======================================================================
+       PANEL PRIVADO DE ADMINISTRACIÓN
+       ======================================================================= */
+    function openAdminModal() {
+      document.getElementById('adminModalBackdrop').classList.remove('hidden');
+      if (isAdminAuthenticated) {
+        document.getElementById('adminLoginBox').classList.add('hidden');
+        document.getElementById('adminDashboardBox').classList.remove('hidden');
+        syncAdminInputs();
+        renderAdminTables();
+      } else {
+        document.getElementById('adminLoginBox').classList.remove('hidden');
+        document.getElementById('adminDashboardBox').classList.add('hidden');
+        setTimeout(() => document.getElementById('adminPasswordInput')?.focus(), 50);
+      }
+    }
+
+    function closeAdminModal() {
+      document.getElementById('adminModalBackdrop').classList.add('hidden');
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const pass = document.getElementById('adminPasswordInput').value;
+      if (pass === storeData.adminPasswordHash) {
+        isAdminAuthenticated = true;
+        document.getElementById('adminPasswordInput').value = '';
+        document.getElementById('adminLoginBox').classList.add('hidden');
+        document.getElementById('adminDashboardBox').classList.remove('hidden');
+        syncAdminInputs();
+        renderAdminTables();
+        showToast('Panel privado desbloqueado.');
+      } else {
+        showToast('Clave incorrecta.');
+      }
+    }
+
+    function switchAdminTab(tabName) {
+      document.querySelectorAll('.admin-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tabName);
+      });
+      ['products', 'folders', 'points', 'access', 'cloud', 'settings'].forEach(t => {
+        document.getElementById('adminTab-' + t).classList.toggle('hidden', t !== tabName);
+      });
+    }
+
+    function populateFolderSelects() {
+      const prodSel = document.getElementById('prodFolder');
+      const parentSel = document.getElementById('newFolderParent');
+      const options = [`<option value="root">📁 Inicio (Raíz)</option>`].concat(
+        storeData.folders.map(f => `<option value="${escapeHtml(f.id)}">📁 ${escapeHtml(getFolderPathLabel(f.id))}</option>`)
+      );
+      prodSel.innerHTML = options.join('');
+      parentSel.innerHTML = options.join('');
+      if (storeData.currentFolderId && storeData.currentFolderId !== 'root') {
+        prodSel.value = storeData.currentFolderId;
+      }
+    }
+
+    function syncAdminInputs() {
+      populateFolderSelects();
+      const cfg = storeData.storeConfig || {};
+      const vis = cfg.visibility || {};
+
+      document.getElementById('cfgShowFloatingWa').checked = vis.showFloatingWa !== false;
+      document.getElementById('cfgShowAccountSection').checked = vis.showAccountSection !== false;
+      document.getElementById('cfgShowLevelsSection').checked = vis.showLevelsSection !== false;
+      document.getElementById('cfgShowPaymentsSection').checked = vis.showPaymentsSection !== false;
+      document.getElementById('cfgShowPriceMenuSection').checked = vis.showPriceMenuSection !== false;
+
+      document.getElementById('cfgCustomMediaUrl').value = cfg.customMediaUrl || '';
+      document.getElementById('cfgHeroTitle').value = cfg.heroTitle || '';
+      document.getElementById('cfgHeroDesc').value = cfg.heroDesc || '';
+      document.getElementById('cfgBrandSub').value = cfg.brandSub || 'Tenemos lo mejor para tu estilo';
+      document.getElementById('cfgWhatsappNumber').value = cfg.whatsappNumber || '584167172744';
+      document.getElementById('cfgDefaultPoints').value = cfg.defaultPoints ?? 50;
+      document.getElementById('cfgBankName').value = cfg.bankName || '';
+      document.getElementById('cfgPayPhone').value = cfg.payPhone || '';
+      document.getElementById('cfgPayId').value = cfg.payId || '';
+
+      document.getElementById('cloudNameInput').value = storeData.cloud.cloudinary.cloudName || '';
+      document.getElementById('cloudPresetInput').value = storeData.cloud.cloudinary.uploadPreset || '';
+      document.getElementById('ghOwnerInput').value = storeData.cloud.github.owner || '';
+      document.getElementById('ghRepoInput').value = storeData.cloud.github.repo || '';
+      document.getElementById('ghBranchInput').value = storeData.cloud.github.branch || 'main';
+      document.getElementById('ghPathInput').value = storeData.cloud.github.path || 'data/store-data.json';
+      document.getElementById('ghTokenInput').value = storeData.cloud.github.token || '';
+      document.getElementById('logoUrlInput').value = storeData.logoUrl || '';
+      document.getElementById('prodPoints').value = cfg.defaultPoints ?? 50;
+      updateCloudinaryBadge();
+    }
+
+    function saveStoreAccessConfig() {
+      storeData.storeConfig = {
+        ...storeData.storeConfig,
+        brandSub: document.getElementById('cfgBrandSub').value.trim() || 'Tenemos lo mejor para tu estilo',
+        whatsappNumber: document.getElementById('cfgWhatsappNumber').value.trim() || '584167172744',
+        defaultPoints: Math.max(0, parseInt(document.getElementById('cfgDefaultPoints').value, 10) || 50),
+        bankName: document.getElementById('cfgBankName').value.trim(),
+        payPhone: document.getElementById('cfgPayPhone').value.trim(),
+        payId: document.getElementById('cfgPayId').value.trim(),
+        customMediaUrl: document.getElementById('cfgCustomMediaUrl').value.trim(),
+        heroTitle: document.getElementById('cfgHeroTitle').value.trim(),
+        heroDesc: document.getElementById('cfgHeroDesc').value.trim(),
+        visibility: {
+          showFloatingWa: document.getElementById('cfgShowFloatingWa').checked,
+          showAccountSection: document.getElementById('cfgShowAccountSection').checked,
+          showLevelsSection: document.getElementById('cfgShowLevelsSection').checked,
+          showPaymentsSection: document.getElementById('cfgShowPaymentsSection').checked,
+          showPriceMenuSection: document.getElementById('cfgShowPriceMenuSection').checked
+        }
+      };
+      saveStoreData();
+      applyStoreConfigToUI();
+      applyReelScene(reelIndex);
+      applyGifSlide(gifIndex);
+      renderCatalog();
+      renderPriceMenu();
+      showToast('Cambios guardados en la tienda.');
+    }
+
+    function renderAdminTables() {
+      populateFolderSelects();
+
+      const pBody = document.getElementById('adminProductsBody');
+      pBody.innerHTML = storeData.products.length
+        ? storeData.products.map(p => `
+            <tr>
+              <td><strong>${escapeHtml(p.name)}</strong></td>
+              <td>${escapeHtml(getFolderPathLabel(p.folderId))}</td>
+              <td>$${Number(p.price || 0).toFixed(2)}</td>
+              <td>+${Number(p.points ?? 50)}</td>
+              <td style="display:flex;gap:0.35rem;flex-wrap:wrap;">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="editProduct('${escapeHtml(p.id)}')">Editar</button>
+                <button type="button" class="btn btn-danger btn-sm" onclick="deleteProduct('${escapeHtml(p.id)}')">Quitar</button>
+              </td>
+            </tr>
+          `).join('')
+        : `<tr><td colspan="5">Sin productos.</td></tr>`;
+
+      const fBody = document.getElementById('adminFoldersBody');
+      fBody.innerHTML = storeData.folders.length
+        ? storeData.folders.map(f => {
+            const parentName = f.parentId && f.parentId !== 'root'
+              ? getFolderPathLabel(f.parentId)
+              : 'Inicio';
+            return `
+              <tr>
+                <td><strong>📁 ${escapeHtml(f.name)}</strong></td>
+                <td>${escapeHtml(parentName)}</td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" onclick="deleteFolder('${escapeHtml(f.id)}')">Eliminar</button>
+                </td>
+              </tr>
+            `;
+          }).join('')
+        : `<tr><td colspan="3">Sin carpetas creadas.</td></tr>`;
+
+      const cBody = document.getElementById('adminClientsBody');
+      cBody.innerHTML = storeData.clients.length
+        ? storeData.clients.map(c => {
+            const lvl = getLevelByPoints(c.points);
+            return `
+              <tr>
+                <td><strong>${escapeHtml(c.fullName)}</strong></td>
+                <td>@${escapeHtml(c.username)}</td>
+                <td>${escapeHtml(c.phone)}</td>
+                <td><strong>${Number(c.points || 0)}</strong></td>
+                <td>${escapeHtml(lvl.name)}</td>
+                <td style="display:flex;gap:0.35rem;flex-wrap:wrap;">
+                  <button type="button" class="btn btn-gold btn-sm" onclick="adjustClientPoints('${escapeHtml(c.username)}', 50)">+50 pts</button>
+                  <button type="button" class="btn btn-secondary btn-sm" onclick="adjustClientPoints('${escapeHtml(c.username)}', -50)">-50 pts</button>
+                </td>
+              </tr>
+            `;
+          }).join('')
+        : `<tr><td colspan="6">Aún no hay clientas registradas.</td></tr>`;
+    }
+
+    function resetProductForm() {
+      document.getElementById('editProductId').value = '';
+      document.getElementById('productFormTitle').textContent = 'Agregar Nuevo Producto';
+      document.getElementById('productForm').reset();
+      document.getElementById('prodPoints').value = storeData.storeConfig?.defaultPoints ?? 50;
+      populateFolderSelects();
+    }
+
+    function handleProductSubmit(e) {
+      e.preventDefault();
+      const id = document.getElementById('editProductId').value;
+      const name = document.getElementById('prodName').value.trim();
+      const price = parseFloat(document.getElementById('prodPrice').value) || 0;
+      const defPts = Number(storeData.storeConfig?.defaultPoints ?? 50);
+      const points = parseInt(document.getElementById('prodPoints').value, 10);
+      const folderId = document.getElementById('prodFolder').value || 'root';
+      const desc = document.getElementById('prodDesc').value.trim();
+      const image = document.getElementById('prodImageUrl').value.trim();
+
+      if (!name) return;
+
+      if (id) {
+        const idx = storeData.products.findIndex(p => p.id === id);
+        if (idx >= 0) {
+          storeData.products[idx] = {
+            ...storeData.products[idx],
+            name,
+            price,
+            points: Number.isNaN(points) ? defPts : points,
+            folderId,
+            desc,
+            image: image || storeData.products[idx].image
+          };
+          showToast('Producto actualizado. Pulsa "Publicar Cambios (GitHub)" para enviarlo.');
+        }
+      } else {
+        storeData.products.unshift({
+          id: 'p-' + Date.now(),
+          name,
+          price,
+          points: Number.isNaN(points) ? defPts : points,
+          folderId,
+          desc,
+          image
+        });
+        showToast('Producto agregado. Pulsa "Publicar Cambios (GitHub)" para enviarlo.');
+      }
+
+      saveStoreData();
+      resetProductForm();
+      renderCatalog();
+      renderPriceMenu();
+      renderAdminTables();
+    }
+
+    function editProduct(id) {
+      const p = storeData.products.find(item => item.id === id);
+      if (!p) return;
+      document.getElementById('editProductId').value = p.id;
+      document.getElementById('productFormTitle').textContent = 'Editar Producto';
+      document.getElementById('prodName').value = p.name;
+      document.getElementById('prodPrice').value = p.price;
+      document.getElementById('prodPoints').value = p.points ?? 50;
+      document.getElementById('prodFolder').value = p.folderId || 'root';
+      document.getElementById('prodDesc').value = p.desc || '';
+      document.getElementById('prodImageUrl').value = p.image || '';
+      switchAdminTab('products');
+    }
+
+    function deleteProduct(id) {
+      storeData.products = storeData.products.filter(p => p.id !== id);
+      saveStoreData();
+      renderCatalog();
+      renderPriceMenu();
+      renderAdminTables();
+      showToast('Producto eliminado.');
+    }
+
+    function handleFolderSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('newFolderName').value.trim();
+      const parentId = document.getElementById('newFolderParent').value || 'root';
+      if (!name) return;
+      storeData.folders.push({ id: 'f-' + Date.now(), name, parentId });
+      saveStoreData();
+      document.getElementById('newFolderName').value = '';
+      renderCatalog();
+      renderPriceMenu();
+      renderAdminTables();
+      showToast(`Carpeta "${name}" creada.`);
+    }
+
+    function deleteFolder(id) {
+      const toRemove = new Set([id]);
+      let added = true;
+      while (added) {
+        added = false;
+        storeData.folders.forEach(f => {
+          if (toRemove.has(f.parentId) && !toRemove.has(f.id)) {
+            toRemove.add(f.id);
+            added = true;
+          }
+        });
+      }
+      storeData.folders = storeData.folders.filter(f => !toRemove.has(f.id));
+      storeData.products.forEach(p => {
+        if (toRemove.has(p.folderId)) p.folderId = 'root';
+      });
+      if (toRemove.has(storeData.currentFolderId)) storeData.currentFolderId = 'root';
+      saveStoreData();
+      renderCatalog();
+      renderPriceMenu();
+      renderAdminTables();
+      showToast('Carpeta eliminada.');
+    }
+
+    function adjustClientPoints(username, delta) {
+      const client = storeData.clients.find(c => c.username === username);
+      if (!client) return;
+      client.points = Math.max(0, Number(client.points || 0) + Number(delta || 0));
+      saveStoreData();
+      renderClientVipCard();
+      renderAdminTables();
+      showToast(`Puntos de @${username}: ${client.points}`);
+    }
+
+    /* =======================================================================
+       CLOUDINARY Y GITHUB
+       ======================================================================= */
+    async function uploadImageToCloudinary(file, folderName = 'bh-hadasa-style') {
+      const cloudName = (document.getElementById('cloudNameInput')?.value || storeData.cloud?.cloudinary?.cloudName || '').trim();
+      const uploadPreset = (document.getElementById('cloudPresetInput')?.value || storeData.cloud?.cloudinary?.uploadPreset || '').trim();
+
+      if (!cloudName || !uploadPreset) {
+        throw new Error('Cloudinary no configurado');
+      }
+
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('upload_preset', uploadPreset);
+      formData.append('folder', folderName);
+
+      const res = await fetch(`https://api.cloudinary.com/v1_1/${encodeURIComponent(cloudName)}/image/upload`, {
+        method: 'POST',
+        body: formData
+      });
+
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        throw new Error(errData?.error?.message || 'Error subiendo a Cloudinary');
+      }
+
+      const data = await res.json();
+      if (!data.secure_url) throw new Error('Cloudinary no devolvió secure_url');
+      return data.secure_url;
+    }
+
+    async function testCloudinaryConnection() {
+      saveCloudConfig();
+      const { cloudName, uploadPreset } = storeData.cloud.cloudinary;
+      if (!cloudName || !uploadPreset) {
+        showToast('Ingresa Cloud Name y Upload Preset primero.');
+        return;
+      }
+      try {
+        const checkUrl = `https://res.cloudinary.com/${encodeURIComponent(cloudName)}/image/upload/sample.jpg`;
+        const res = await fetch(checkUrl, { method: 'HEAD' });
+        if (res.ok) {
+          showToast(`Conexión verificada con Cloudinary (${cloudName}).`);
+        } else {
+          showToast(`Guardado ${cloudName}. Sube una imagen para confirmar el preset.`);
+        }
+      } catch (e) {
+        showToast(`Guardado ${cloudName}. Sube una imagen para confirmar el preset.`);
+      }
+    }
+
+    function readFileAsDataUrl(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function handleProductFileUpload(e) {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      showToast('Sincronizando foto con Cloudinary...');
+      try {
+        const url = await uploadImageToCloudinary(file, 'bh-hadasa-style/productos');
+        document.getElementById('prodImageUrl').value = url;
+        showToast('Foto sincronizada en Cloudinary correctamente.');
+      } catch (err) {
+        const fallback = await readFileAsDataUrl(file);
+        document.getElementById('prodImageUrl').value = fallback;
+        showToast('Guardada localmente (revisa Cloud Name y Upload Preset en Cloudinary).');
+      }
+    }
+
+    async function handleLogoUpload(e) {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      showToast('Sincronizando logo con Cloudinary...');
+      try {
+        const url = await uploadImageToCloudinary(file, 'bh-hadasa-style/logo');
+        storeData.logoUrl = url;
+        document.getElementById('logoUrlInput').value = url;
+        saveStoreData();
+        renderLogo();
+        showToast('Logo sincronizado en Cloudinary.');
+      } catch (err) {
+        const fallback = await readFileAsDataUrl(file);
+        storeData.logoUrl = fallback;
+        document.getElementById('logoUrlInput').value = fallback;
+        saveStoreData();
+        renderLogo();
+        showToast('Logo guardado localmente.');
+      }
+    }
+
+    function saveLogoUrl() {
+      storeData.logoUrl = document.getElementById('logoUrlInput').value.trim();
+      saveStoreData();
+      renderLogo();
+      showToast('Logo guardado.');
+    }
+
+    function changeAdminPassword() {
+      const nextPass = document.getElementById('newAdminPasswordInput').value.trim();
+      if (!nextPass) {
+        showToast('Escribe una clave válida.');
+        return;
+      }
+      storeData.adminPasswordHash = nextPass;
+      document.getElementById('newAdminPasswordInput').value = '';
+      saveStoreData();
+      showToast('Clave de administración actualizada.');
+    }
+
+    function saveCloudConfig() {
+      storeData.cloud.cloudinary.cloudName = document.getElementById('cloudNameInput').value.trim();
+      storeData.cloud.cloudinary.uploadPreset = document.getElementById('cloudPresetInput').value.trim();
+      saveStoreData();
+      updateCloudinaryBadge();
+      showToast('Configuración de Cloudinary guardada.');
+    }
+
+    function saveGithubConfig() {
+      storeData.cloud.github.owner = document.getElementById('ghOwnerInput').value.trim();
+      storeData.cloud.github.repo = document.getElementById('ghRepoInput').value.trim();
+      storeData.cloud.github.branch = document.getElementById('ghBranchInput').value.trim() || 'main';
+      storeData.cloud.github.path = document.getElementById('ghPathInput').value.trim() || 'data/store-data.json';
+      storeData.cloud.github.token = document.getElementById('ghTokenInput').value.trim();
+      saveStoreData();
+      showToast('Configuración de GitHub guardada.');
+    }
+
+    function toBase64Utf8(str) {
+      const bytes = new TextEncoder().encode(str);
+      let bin = '';
+      bytes.forEach(b => { bin += String.fromCharCode(b); });
+      return btoa(bin);
+    }
+
+    function fromBase64Utf8(b64) {
+      const bin = atob(b64.replace(/\n/g, ''));
+      const bytes = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      return new TextDecoder().decode(bytes);
+    }
+
+    function buildPublicSnapshot() {
+      return {
+        logoUrl: storeData.logoUrl,
+        storeConfig: {
+          ...storeData.storeConfig,
+          visibility: { ...(storeData.storeConfig?.visibility || {}) }
+        },
+        cloud: {
+          cloudinary: { ...(storeData.cloud?.cloudinary || {}) },
+          github: {
+            owner: storeData.cloud?.github?.owner || 'breidyacuna',
+            repo: storeData.cloud?.github?.repo || 'B-H-Hadasa-Style',
+            branch: storeData.cloud?.github?.branch || 'main',
+            path: storeData.cloud?.github?.path || 'data/store-data.json',
+            token: ''
+          }
+        },
+        folders: storeData.folders,
+        products: storeData.products,
+        clients: storeData.clients,
+        updatedAt: new Date().toISOString()
+      };
+    }
+
+    function applyPublicSnapshot(parsed) {
+      if (!parsed || typeof parsed !== 'object') return;
+      if (typeof parsed.logoUrl === 'string') storeData.logoUrl = parsed.logoUrl;
+      if (parsed.storeConfig && typeof parsed.storeConfig === 'object') {
+        storeData.storeConfig = {
+          ...storeData.storeConfig,
+          ...parsed.storeConfig,
+          visibility: {
+            ...storeData.storeConfig.visibility,
+            ...(parsed.storeConfig.visibility || {})
+          }
+        };
+      }
+      if (parsed.cloud?.cloudinary) {
+        storeData.cloud.cloudinary = {
+          ...storeData.cloud.cloudinary,
+          ...parsed.cloud.cloudinary
+        };
+      }
+      if (parsed.cloud?.github) {
+        const keepToken = storeData.cloud.github.token;
+        storeData.cloud.github = {
+          ...storeData.cloud.github,
+          ...parsed.cloud.github,
+          token: keepToken || parsed.cloud.github.token || ''
+        };
+      }
+      if (Array.isArray(parsed.folders) && parsed.folders.length) storeData.folders = parsed.folders;
+      if (Array.isArray(parsed.products) && parsed.products.length) storeData.products = parsed.products;
+      if (Array.isArray(parsed.clients) && parsed.clients.length) storeData.clients = parsed.clients;
+      saveStoreData();
+      applyStoreConfigToUI();
+      renderLogo();
+      applyReelScene(reelIndex);
+      applyGifSlide(gifIndex);
+      renderCatalog();
+      renderPriceMenu();
+      renderClientVipCard();
+      if (isAdminAuthenticated) {
+        syncAdminInputs();
+        renderAdminTables();
+      }
+    }
+
+    async function loadPublicCatalogFromGithub() {
+      const { owner, repo, branch, path } = storeData.cloud.github;
+      if (!owner || !repo || !path) return;
+      const rawUrl = `https://raw.githubusercontent.com/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/${encodeURIComponent(branch || 'main')}/${path.replace(/^\/+/, '')}?t=${Date.now()}`;
+      try {
+        const res = await fetch(rawUrl, { cache: 'no-store' });
+        if (!res.ok) return;
+        const parsed = await res.json();
+        applyPublicSnapshot(parsed);
+      } catch (err) {
+        // Mantiene datos actuales si aún no existe el archivo JSON
+      }
+    }
+
+    async function pushToGithub() {
+      saveGithubConfig();
+      const { owner, repo, branch, path, token } = storeData.cloud.github;
+      if (!owner || !repo || !path || !token) {
+        showToast('Completa usuario, repositorio, ruta y token de GitHub.');
+        switchAdminTab('cloud');
+        return;
+      }
+
+      const cleanPath = path.replace(/^\/+/, '');
+      const apiUrl = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${cleanPath}`;
+      const headers = {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github+json',
+        'Content-Type': 'application/json'
+      };
+
+      try {
+        let sha = undefined;
+        const getRes = await fetch(`${apiUrl}?ref=${encodeURIComponent(branch)}&_=${Date.now()}`, {
+          headers,
+          cache: 'no-store'
+        });
+        if (getRes.ok) {
+          const existing = await getRes.json();
+          sha = existing.sha;
+        }
+
+        const snapshot = buildPublicSnapshot();
+        const putRes = await fetch(apiUrl, {
+          method: 'PUT',
+          headers,
+          body: JSON.stringify({
+            message: 'Publicar cambios B&H • Hadasa Style',
+            content: toBase64Utf8(JSON.stringify(snapshot, null, 2)),
+            branch,
+            ...(sha ? { sha } : {})
+          })
+        });
+
+        if (!putRes.ok) throw new Error('No se pudo publicar en GitHub');
+        showToast('¡Publicado en GitHub! Quienes abran el enlace verán los cambios.');
+      } catch (err) {
+        showToast('Error al publicar en GitHub. Revisa tu token y permisos.');
+      }
+    }
+
+    async function publishAllChanges() {
+      if (!isAdminAuthenticated) {
+        openAdminModal();
+        showToast('Inicia sesión en el panel para publicar.');
+        return;
+      }
+      await pushToGithub();
+    }
+
+    async function pullFromGithub() {
+      saveGithubConfig();
+      const { owner, repo, branch, path, token } = storeData.cloud.github;
+      if (!owner || !repo || !path) {
+        showToast('Completa usuario, repositorio y ruta de GitHub.');
+        return;
+      }
+
+      const cleanPath = path.replace(/^\/+/, '');
+      const apiUrl = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${cleanPath}?ref=${encodeURIComponent(branch)}&_=${Date.now()}`;
+      const headers = {
+        'Accept': 'application/vnd.github+json',
+        ...(token ? { 'Authorization': `Bearer ${token}` } : {})
+      };
+
+      try {
+        const res = await fetch(apiUrl, { headers, cache: 'no-store' });
+        if (!res.ok) throw new Error('Archivo no encontrado en GitHub');
+        const data = await res.json();
+        const parsed = JSON.parse(fromBase64Utf8(data.content || ''));
+        applyPublicSnapshot(parsed);
+        showToast('Datos cargados desde GitHub.');
+      } catch (err) {
+        showToast('No se pudieron cargar los datos desde GitHub.');
+      }
+    }
+
+    function exportBackupJson() {
+      const blob = new Blob([JSON.stringify(buildPublicSnapshot(), null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'bh-hadasa-style-respaldo.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('Respaldo JSON descargado.');
+    }
+
+    function importBackupJson(e) {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = ev => {
+        try {
+          const imported = JSON.parse(ev.target.result);
+          applyPublicSnapshot(imported);
+          showToast('Respaldo JSON importado.');
+        } catch (err) {
+          showToast('Archivo JSON inválido.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      applyStoreConfigToUI();
+      renderLogo();
+      applyReelScene(0);
+      applyGifSlide(0);
+      renderCatalog();
+      renderPriceMenu();
+      renderClientVipCard();
+      await loadPublicCatalogFromGithub();
+    });
+  </script>
+</body>
+</html>
