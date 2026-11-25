@@ -50,6 +50,96 @@
   ],
   "products": [
     {
+      "id": "p-1795632442510",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632437/bh-hadasa-style/productos/yqt2olf931w9euquoj3c.jpg"
+    },
+    {
+      "id": "p-1795632430620",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632426/bh-hadasa-style/productos/psepzpaxhwxrqolv81k2.jpg"
+    },
+    {
+      "id": "p-1795632419216",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632414/bh-hadasa-style/productos/y2kivhh3sofc6o4fgfny.jpg"
+    },
+    {
+      "id": "p-1795632406753",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632398/bh-hadasa-style/productos/knphfhjcchbr8dhdpqm8.jpg"
+    },
+    {
+      "id": "p-1795632391392",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632386/bh-hadasa-style/productos/gvvicdqnlvaisv7zkjh5.jpg"
+    },
+    {
+      "id": "p-1795632379013",
+      "name": "SANDALIAS PARA DAMAS CON TIRAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632368/bh-hadasa-style/productos/zlpovajxswfnbllgw4io.jpg"
+    },
+    {
+      "id": "p-1795632361495",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632355/bh-hadasa-style/productos/ix4vyhdt3s0uic8vpcds.jpg"
+    },
+    {
+      "id": "p-1795632347439",
+      "name": "SANDALIAS PARA DAMAS CON TIRAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632336/bh-hadasa-style/productos/jhthnxwxipnnm9oqw5t3.jpg"
+    },
+    {
+      "id": "p-1795632329406",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632321/bh-hadasa-style/productos/dd7r5eswbdhnylr3vgzu.jpg"
+    },
+    {
+      "id": "p-1795632315367",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632305/bh-hadasa-style/productos/j7a7rnxcpe5lddkesiqn.jpg"
+    },
+    {
       "id": "p-1795632189497",
       "name": "SANDALIAS PARA DAMAS",
       "price": 32,
@@ -292,5 +382,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:44:31.015Z"
+  "updatedAt": "2026-11-25T18:47:36.352Z"
 }
