@@ -33,13 +33,13 @@
   },
   "folders": [
     {
-      "id": "f-1795623720065",
-      "name": "FRANELAS ESTAMPADAS OVERSIZE",
+      "id": "f-1795623699079",
+      "name": "BLUSAS TEJIDAS",
       "parentId": "root"
     },
     {
-      "id": "f-1795629405961",
-      "name": "BLUSAS TEJIDAS",
+      "id": "f-1795623720065",
+      "name": "FRANELAS ESTAMPADAS OVERSIZE",
       "parentId": "root"
     }
   ],
@@ -52,5 +52,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T17:57:10.579Z"
+  "updatedAt": "2026-11-25T17:59:29.221Z"
 }
