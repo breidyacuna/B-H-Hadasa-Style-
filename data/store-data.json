@@ -45,6 +45,15 @@
   ],
   "products": [
     {
+      "id": "p-1795630241536",
+      "name": "OVERSIZE RAYADA",
+      "price": 18,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Variedad de colores y estampados. Consultar tallas",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795630223/bh-hadasa-style/productos/pbsmlbnhvxessbu9blyd.jpg"
+    },
+    {
       "id": "p-1795629602104",
       "name": "Blusa Tejida",
       "price": 20,
@@ -62,5 +71,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:00:05.110Z"
+  "updatedAt": "2026-11-25T18:11:18.125Z"
 }
