@@ -15,7 +15,7 @@
       "showAccountSection": true,
       "showLevelsSection": true,
       "showPaymentsSection": true,
-      "showPriceMenuSection": true
+      "showPriceMenuSection": false
     }
   },
   "cloud": {
@@ -197,5 +197,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:27:14.013Z"
+  "updatedAt": "2026-11-25T18:29:03.208Z"
 }
