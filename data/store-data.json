@@ -50,6 +50,87 @@
   ],
   "products": [
     {
+      "id": "p-1795632189497",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632181/bh-hadasa-style/productos/ov6svxado3ct0nvpept4.jpg"
+    },
+    {
+      "id": "p-1795632174553",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632166/bh-hadasa-style/productos/mw7grcyvsa3gbfxg7lx2.jpg"
+    },
+    {
+      "id": "p-1795632157872",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 30,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632150/bh-hadasa-style/productos/thgujxsyu4iwzu78icj9.jpg"
+    },
+    {
+      "id": "p-1795632140175",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632131/bh-hadasa-style/productos/jcw46k2hxcy12yjx8bmx.jpg"
+    },
+    {
+      "id": "p-1795632123403",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632115/bh-hadasa-style/productos/jqm8o7n45qqykadihjxo.jpg"
+    },
+    {
+      "id": "p-1795632110036",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 30,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632099/bh-hadasa-style/productos/qeynrrg0ar1ofn8pzcky.jpg"
+    },
+    {
+      "id": "p-1795632093429",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632086/bh-hadasa-style/productos/av7annomhvnekddpmqke.jpg"
+    },
+    {
+      "id": "p-1795632078241",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "f-1795631656981",
+      "desc": "Consultar tallas",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632059/bh-hadasa-style/productos/mn09cczxivlarpt04hk1.jpg"
+    },
+    {
+      "id": "p-1795632042098",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "root",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795632042/bh-hadasa-style/productos/yohnz0iy7zvxex0jc7nb.jpg"
+    },
+    {
       "id": "p-1795631686876",
       "name": "SANDALIAS PARA DAMAS",
       "price": 32,
@@ -211,5 +292,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:34:55.646Z"
+  "updatedAt": "2026-11-25T18:43:15.586Z"
 }
