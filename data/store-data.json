@@ -41,9 +41,23 @@
       "id": "f-1795623720065",
       "name": "FRANELAS ESTAMPADAS OVERSIZE",
       "parentId": "root"
+    },
+    {
+      "id": "f-1795631656981",
+      "name": "SANDALIAS DE DAMA",
+      "parentId": "root"
     }
   ],
   "products": [
+    {
+      "id": "p-1795631686876",
+      "name": "SANDALIAS PARA DAMAS",
+      "price": 32,
+      "points": 50,
+      "folderId": "root",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795631687/bh-hadasa-style/productos/sdeuqth8atdhpfeeanc7.jpg"
+    },
     {
       "id": "p-1795631137195",
       "name": "OVERSIZE",
@@ -197,5 +211,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:33:30.336Z"
+  "updatedAt": "2026-11-25T18:34:55.646Z"
 }
