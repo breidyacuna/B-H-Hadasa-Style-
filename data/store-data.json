@@ -45,6 +45,33 @@
   ],
   "products": [
     {
+      "id": "p-1795630511224",
+      "name": "OVERSIZE",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623720065",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795630496/bh-hadasa-style/productos/twlcuabo5yhzqruulnwf.jpg"
+    },
+    {
+      "id": "p-1795630475834",
+      "name": "OVERSIZE",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623720065",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795630452/bh-hadasa-style/productos/uxidfvadc0g8eweefphb.jpg"
+    },
+    {
+      "id": "p-1795630439854",
+      "name": "OVERSIZE",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623720065",
+      "desc": "Variedad en modelos",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795630430/bh-hadasa-style/productos/mehe5cagubzstou43stx.jpg"
+    },
+    {
       "id": "p-1795630379413",
       "name": "OVERSIZE",
       "price": 18,
@@ -89,5 +116,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:13:17.893Z"
+  "updatedAt": "2026-11-25T18:15:16.226Z"
 }
