@@ -45,6 +45,24 @@
   ],
   "products": [
     {
+      "id": "p-1795630379413",
+      "name": "OVERSIZE",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623720065",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795630367/bh-hadasa-style/productos/ntsrtmh23tlwgzigybho.jpg"
+    },
+    {
+      "id": "p-1795630347864",
+      "name": "OVERSIZE",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623720065",
+      "desc": "Variedad en modelos",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795630345/bh-hadasa-style/productos/zkfe1vuat0xuvnclioit.jpg"
+    },
+    {
       "id": "p-1795630241536",
       "name": "OVERSIZE RAYADA",
       "price": 18,
@@ -71,5 +89,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:11:28.280Z"
+  "updatedAt": "2026-11-25T18:13:17.893Z"
 }
