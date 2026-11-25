@@ -43,7 +43,17 @@
       "parentId": "root"
     }
   ],
-  "products": [],
+  "products": [
+    {
+      "id": "p-1795629602104",
+      "name": "Blusa Tejida",
+      "price": 20,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Consultar colores ( Talla unica)",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795629575/bh-hadasa-style/productos/t2nvyafwur6rg3xmlzni.jpg"
+    }
+  ],
   "clients": [
     {
       "fullName": "María Pérez",
@@ -52,5 +62,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T17:59:29.221Z"
+  "updatedAt": "2026-11-25T18:00:05.110Z"
 }
