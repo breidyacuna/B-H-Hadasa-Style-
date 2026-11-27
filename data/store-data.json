@@ -46,9 +46,23 @@
       "id": "f-1795631656981",
       "name": "SANDALIAS DE DAMA",
       "parentId": "root"
+    },
+    {
+      "id": "f-1795802156060",
+      "name": "PANTALON DE VESTIR",
+      "parentId": "root"
     }
   ],
   "products": [
+    {
+      "id": "p-1795802223233",
+      "name": "Pantalon Beis",
+      "price": 25,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Consultar Colores dispobles",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795802222/bh-hadasa-style/productos/tkywp0hygrynxf2fcz6g.jpg"
+    },
     {
       "id": "p-1795632442510",
       "name": "SANDALIAS PARA DAMAS",
@@ -382,5 +396,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-25T18:49:24.745Z"
+  "updatedAt": "2026-11-27T17:57:07.523Z"
 }
