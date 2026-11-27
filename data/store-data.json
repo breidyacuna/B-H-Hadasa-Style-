@@ -55,6 +55,69 @@
   ],
   "products": [
     {
+      "id": "p-1795803179563",
+      "name": "Blusa tejida importada",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623699079",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803162/bh-hadasa-style/productos/mkgyh35k6jkzpwln9ko5.jpg"
+    },
+    {
+      "id": "p-1795803156554",
+      "name": "Blusa Tejida Importada",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623699079",
+      "desc": "Consultar Colores dispobles",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803144/bh-hadasa-style/productos/cbvwtzrudn2ikpvlh3qr.jpg"
+    },
+    {
+      "id": "p-1795803103960",
+      "name": "Blusa Tejida Importada",
+      "price": 18,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Consultar Colores dispobles",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803105/bh-hadasa-style/productos/tbgxojuwmeplcjhcxsj3.jpg"
+    },
+    {
+      "id": "p-1795803058332",
+      "name": "Blusa Tejida Importada",
+      "price": 18,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Consultar Colores dispobles",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803056/bh-hadasa-style/productos/luveji10leyba3ppsyxm.jpg"
+    },
+    {
+      "id": "p-1795803012739",
+      "name": "Blusa Tejida",
+      "price": 18,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Consultar Colores dispobles",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803013/bh-hadasa-style/productos/n2eo4axky4vrc8mpugbz.jpg"
+    },
+    {
+      "id": "p-1795802912723",
+      "name": "Coleccion de Palazo Shembray",
+      "price": 15,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Tres colores disponibles",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795802907/bh-hadasa-style/productos/bjewkfmojq8sj1qavxvh.jpg"
+    },
+    {
+      "id": "p-1795802730399",
+      "name": "Nueva Colección Palazo🔥",
+      "price": 15,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Variedad de diseño",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795802728/bh-hadasa-style/productos/m8s1473bvuusvaqxqrmc.jpg"
+    },
+    {
       "id": "p-1795802223233",
       "name": "Pantalon Beis",
       "price": 25,
@@ -396,5 +459,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-27T17:57:07.523Z"
+  "updatedAt": "2026-11-27T18:13:04.774Z"
 }
