@@ -51,9 +51,100 @@
       "id": "f-1795802156060",
       "name": "PANTALON DE VESTIR",
       "parentId": "root"
+    },
+    {
+      "id": "f-1795803435878",
+      "name": "Blusas",
+      "parentId": "root"
+    },
+    {
+      "id": "f-1795803699295",
+      "name": "Colección De Pijamas🔥",
+      "parentId": "root"
     }
   ],
   "products": [
+    {
+      "id": "p-1795803860200",
+      "name": "Pijama 3 piezas",
+      "price": 15,
+      "points": 50,
+      "folderId": "f-1795803699295",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803841/bh-hadasa-style/productos/suo2puvhs1clndhvvndt.jpg"
+    },
+    {
+      "id": "p-1795803799114",
+      "name": "Pijamas 3 piezas",
+      "price": 15,
+      "points": 50,
+      "folderId": "f-1795803699295",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803799/bh-hadasa-style/productos/eryhjauerbve9258jhse.jpg"
+    },
+    {
+      "id": "p-1795803753844",
+      "name": "Pijama 3 piezas",
+      "price": 15,
+      "points": 50,
+      "folderId": "root",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803752/bh-hadasa-style/productos/pb29nwu9ub0lsdpocb7f.jpg"
+    },
+    {
+      "id": "p-1795803652523",
+      "name": "Chaleco tejido",
+      "price": 23,
+      "points": 50,
+      "folderId": "f-1795623699079",
+      "desc": "",
+      "image": "https://placehold.co/500x400/FF80AB/240836?text=Chaleco%20tejido"
+    },
+    {
+      "id": "p-1795803595651",
+      "name": "Suéter tejido importado",
+      "price": 25,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Consultar Colores dispobles",
+      "image": "https://placehold.co/500x400/FF80AB/240836?text=Su%C3%A9ter%20tejido%20importado"
+    },
+    {
+      "id": "p-1795803562800",
+      "name": "Suéter Tejido coreano",
+      "price": 25,
+      "points": 50,
+      "folderId": "f-1795623699079",
+      "desc": "Consultar Colores dispobles",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803519/bh-hadasa-style/productos/atkiixr3ndoojmgdt6yr.jpg"
+    },
+    {
+      "id": "p-1795803481136",
+      "name": "Blusa asimétrica",
+      "price": 22,
+      "points": 50,
+      "folderId": "root",
+      "desc": "Tallas M, S, L",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803425/bh-hadasa-style/productos/normzrzas7faejt335xc.jpg"
+    },
+    {
+      "id": "p-1795803375652",
+      "name": "PALAZO RAYA IMPORTADO",
+      "price": 16,
+      "points": 50,
+      "folderId": "root",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803343/bh-hadasa-style/productos/mrjukpnekzfqr2xfbzni.jpg"
+    },
+    {
+      "id": "p-1795803314084",
+      "name": "Blusa tejida importada",
+      "price": 18,
+      "points": 50,
+      "folderId": "f-1795623699079",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795803303/bh-hadasa-style/productos/gj97kci5od3kjgxddbjp.jpg"
+    },
     {
       "id": "p-1795803216899",
       "name": "Blusa tejida importada",
@@ -468,5 +559,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-27T18:13:39.713Z"
+  "updatedAt": "2026-11-27T18:24:24.311Z"
 }
