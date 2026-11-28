@@ -65,6 +65,24 @@
   ],
   "products": [
     {
+      "id": "p-1795878985279",
+      "name": "Pijama 3 piezas",
+      "price": 15,
+      "points": 50,
+      "folderId": "f-1795803699295",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795878978/bh-hadasa-style/productos/eqmjfmplkggcjn9bynoe.jpg"
+    },
+    {
+      "id": "p-1795878964214",
+      "name": "Pijama 3 piezas",
+      "price": 15,
+      "points": 50,
+      "folderId": "f-1795803699295",
+      "desc": "",
+      "image": "https://res.cloudinary.com/ndzian0b/image/upload/v1795878956/bh-hadasa-style/productos/oyfqismqv1gsxhznpqma.jpg"
+    },
+    {
       "id": "p-1795878904026",
       "name": "Pijama 3 piezas",
       "price": 15,
@@ -604,5 +622,5 @@
       "points": 150
     }
   ],
-  "updatedAt": "2026-11-28T15:15:08.004Z"
+  "updatedAt": "2026-11-28T15:16:28.128Z"
 }
